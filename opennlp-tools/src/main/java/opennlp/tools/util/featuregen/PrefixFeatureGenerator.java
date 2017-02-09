@@ -26,11 +26,11 @@ public class PrefixFeatureGenerator implements AdaptiveFeatureGenerator {
   private int prefixLength;
   
   public PrefixFeatureGenerator() {
-	  prefixLength = DEFAULT_MAX_LENGTH;
+    prefixLength = DEFAULT_MAX_LENGTH;
   }
   
   public PrefixFeatureGenerator(int prefixLength) {
-	  this.prefixLength = prefixLength;
+    this.prefixLength = prefixLength;
   }
 
   @Override
@@ -43,9 +43,9 @@ public class PrefixFeatureGenerator implements AdaptiveFeatureGenerator {
   }
   
   private String[] getPrefixes(String lex) {
-	  
-	int prefixes = Math.min(prefixLength, lex.length());
-	
+      
+    int prefixes = Math.min(prefixLength, lex.length());
+    
     String[] prefs = new String[prefixes];
     for (int li = 0; li < prefixes; li++) {
       prefs[li] = lex.substring(0, Math.min(li + 1, lex.length()));

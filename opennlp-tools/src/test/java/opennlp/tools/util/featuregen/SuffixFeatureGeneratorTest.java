@@ -24,8 +24,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import opennlp.tools.util.featuregen.SuffixFeatureGenerator;
 import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
+import opennlp.tools.util.featuregen.SuffixFeatureGenerator;
 
 public class SuffixFeatureGeneratorTest {
 
@@ -38,12 +38,12 @@ public class SuffixFeatureGeneratorTest {
 
   @Test
   public void lengthTest1() {
-	  
-	String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
+      
+    String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
 
-	int testTokenIndex = 0;
-	int suffixLength = 2;
-	  
+    int testTokenIndex = 0;
+    int suffixLength = 2;
+      
     AdaptiveFeatureGenerator generator = new SuffixFeatureGenerator(suffixLength);    
 
     generator.createFeatures(features, testSentence, testTokenIndex, null);
@@ -56,12 +56,12 @@ public class SuffixFeatureGeneratorTest {
   
   @Test
   public void lengthTest2() {
-	  
-	String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
+      
+    String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
 
-	int testTokenIndex = 3;
-	int suffixLength = 5;
-	  
+    int testTokenIndex = 3;
+    int suffixLength = 5;
+      
     AdaptiveFeatureGenerator generator = new SuffixFeatureGenerator(suffixLength);    
 
     generator.createFeatures(features, testSentence, testTokenIndex, null);
@@ -77,12 +77,12 @@ public class SuffixFeatureGeneratorTest {
   
   @Test
   public void lengthTest3() {
-	  
-	String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
+      
+    String[] testSentence = new String[] {"This", "is", "an", "example", "sentence"};
 
-	int testTokenIndex = 1;
-	int suffixLength = 5;
-	  
+    int testTokenIndex = 1;
+    int suffixLength = 5;
+      
     AdaptiveFeatureGenerator generator = new SuffixFeatureGenerator(suffixLength);    
 
     generator.createFeatures(features, testSentence, testTokenIndex, null);
