@@ -27,13 +27,13 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import opennlp.common.util.Span;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.MockInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.common.util.Span;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

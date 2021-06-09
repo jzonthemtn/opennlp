@@ -21,15 +21,15 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 
-import opennlp.common.namefind.TokenNameFinder;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.util.Span;
 import opennlp.tools.ml.model.SequenceClassificationModel;
 import opennlp.tools.util.MockInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.common.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
 /**

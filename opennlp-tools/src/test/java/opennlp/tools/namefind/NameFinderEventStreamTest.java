@@ -22,10 +22,10 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.util.Span;
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
-import opennlp.common.util.Span;
 import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
 
 /**

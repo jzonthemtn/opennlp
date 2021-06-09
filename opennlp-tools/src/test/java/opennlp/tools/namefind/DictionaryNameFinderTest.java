@@ -17,15 +17,15 @@
 
 package opennlp.tools.namefind;
 
-import opennlp.common.namefind.TokenNameFinder;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import opennlp.tools.dictionary.Dictionary;
-import opennlp.tools.tokenize.SimpleTokenizer;
+import opennlp.common.namefind.TokenNameFinder;
 import opennlp.common.util.Span;
 import opennlp.common.util.StringList;
+import opennlp.tools.dictionary.Dictionary;
+import opennlp.tools.tokenize.SimpleTokenizer;
 
 /**
   *Tests for the {@link DictionaryNameFinder} class.

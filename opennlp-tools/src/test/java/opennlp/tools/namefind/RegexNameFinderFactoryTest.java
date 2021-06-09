@@ -24,8 +24,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.common.util.Span;
+import opennlp.tools.tokenize.WhitespaceTokenizer;
 
 public class RegexNameFinderFactoryTest {
 

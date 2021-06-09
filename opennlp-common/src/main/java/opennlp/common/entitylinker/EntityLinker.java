@@ -17,10 +17,10 @@
 
 package opennlp.common.entitylinker;
 
-import opennlp.common.util.Span;
-
 import java.io.IOException;
 import java.util.List;
+
+import opennlp.common.util.Span;
 
 /**
  * EntityLinkers establish connections to external data to enrich extracted

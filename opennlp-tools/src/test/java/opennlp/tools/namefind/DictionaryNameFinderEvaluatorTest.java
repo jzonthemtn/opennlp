@@ -26,14 +26,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.util.Span;
+import opennlp.common.util.StringList;
 import opennlp.tools.cmdline.namefind.NameEvaluationErrorListener;
 import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.common.util.Span;
-import opennlp.common.util.StringList;
 import opennlp.tools.util.eval.FMeasure;
 
 /**
