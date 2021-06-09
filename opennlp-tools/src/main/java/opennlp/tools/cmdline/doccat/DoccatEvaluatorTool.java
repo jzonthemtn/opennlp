@@ -32,15 +32,16 @@ import opennlp.tools.cmdline.TerminateToolException;
 import opennlp.tools.cmdline.doccat.DoccatEvaluatorTool.EvalToolParams;
 import opennlp.tools.cmdline.params.EvaluatorParams;
 import opennlp.tools.cmdline.params.FineGrainedEvaluatorParams;
-import opennlp.tools.doccat.*;
+import opennlp.tools.doccat.DoccatEvaluationMonitor;
+import opennlp.tools.doccat.DoccatModel;
+import opennlp.tools.doccat.DocumentCategorizerEvaluator;
+import opennlp.tools.doccat.DocumentCategorizerME;
+import opennlp.tools.doccat.DocumentSample;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.eval.EvaluationMonitor;
 
 public final class DoccatEvaluatorTool extends
     AbstractEvaluatorTool<DocumentSample, EvalToolParams> {
-
-  interface EvalToolParams extends EvaluatorParams, FineGrainedEvaluatorParams {
-  }
 
   public DoccatEvaluatorTool() {
     super(DocumentSample.class, EvalToolParams.class);
@@ -102,7 +103,7 @@ public final class DoccatEvaluatorTool extends
     } catch (IOException e) {
       System.err.println("failed");
       throw new TerminateToolException(-1, "IO error while reading test data: "
-              + e.getMessage(), e);
+          + e.getMessage(), e);
     }
     // sorry that this can fail
 
@@ -124,5 +125,8 @@ public final class DoccatEvaluatorTool extends
         // nothing to do
       }
     }
+  }
+
+  interface EvalToolParams extends EvaluatorParams, FineGrainedEvaluatorParams {
   }
 }

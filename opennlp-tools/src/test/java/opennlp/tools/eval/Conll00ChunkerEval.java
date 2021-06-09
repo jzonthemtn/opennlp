@@ -22,13 +22,18 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 
-import opennlp.tools.chunker.*;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import opennlp.tools.HighMemoryUsage;
+import opennlp.tools.chunker.ChunkSample;
+import opennlp.tools.chunker.ChunkSampleStream;
+import opennlp.tools.chunker.ChunkerEvaluator;
+import opennlp.tools.chunker.ChunkerFactory;
+import opennlp.tools.chunker.ChunkerME;
+import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.util.MarkableFileInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
@@ -44,9 +49,9 @@ import opennlp.tools.util.model.ModelUtil;
  */
 public class Conll00ChunkerEval extends AbstractEvalTest {
 
-  private static File TEST_DATA_FILE; 
+  private static File TEST_DATA_FILE;
   private static File TRAIN_DATA_FILE;
-  
+
   private static ChunkerModel train(File trainFile, TrainingParameters params)
       throws IOException {
 
@@ -68,22 +73,22 @@ public class Conll00ChunkerEval extends AbstractEvalTest {
     Assert.assertEquals(expectedFMeasure,
         evaluator.getFMeasure().getFMeasure(), 0.0001);
   }
-  
+
   @BeforeClass
   public static void verifyTrainingData() throws Exception {
-    
+
     TEST_DATA_FILE = new File(getOpennlpDataDir(), "conll00/test.txt");
     TRAIN_DATA_FILE = new File(getOpennlpDataDir(), "conll00/train.txt");
 
     verifyTrainingData(new ChunkSampleStream(
             new PlainTextByLineStream(new MarkableFileInputStreamFactory(TEST_DATA_FILE),
-                    StandardCharsets.UTF_8)),
+                StandardCharsets.UTF_8)),
         new BigInteger("84610235226433393380477662908529306002"));
 
     verifyTrainingData(new ChunkSampleStream(
             new PlainTextByLineStream(new MarkableFileInputStreamFactory(TEST_DATA_FILE),
-                    StandardCharsets.UTF_8)),
-        new BigInteger("84610235226433393380477662908529306002"));    
+                StandardCharsets.UTF_8)),
+        new BigInteger("84610235226433393380477662908529306002"));
 
   }
 

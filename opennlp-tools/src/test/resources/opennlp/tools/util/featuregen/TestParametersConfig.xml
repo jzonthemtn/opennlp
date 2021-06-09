@@ -20,12 +20,12 @@
 -->
 
 <featureGenerators name="testParameters">
-  <generator class="opennlp.tools.util.featuregen.GeneratorFactoryTest$TestParametersFeatureGeneratorFactory">
-    <int name="intParam">123</int>
-    <float name="floatParam">45</float>
-    <long name="longParam">67890</long>
-    <double name="doubleParam">123456.789</double>
-    <bool name="boolParam">true</bool>
-    <str name="strParam">HELLO</str>
-  </generator>
+    <generator class="opennlp.tools.util.featuregen.GeneratorFactoryTest$TestParametersFeatureGeneratorFactory">
+        <int name="intParam">123</int>
+        <float name="floatParam">45</float>
+        <long name="longParam">67890</long>
+        <double name="doubleParam">123456.789</double>
+        <bool name="boolParam">true</bool>
+        <str name="strParam">HELLO</str>
+    </generator>
 </featureGenerators>

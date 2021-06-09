@@ -18,5 +18,5 @@
 -->
 
 <generators>
-  <custom class="opennlp.tools.util.featuregen.FeatureGenWithSerializerMapping"/>
+    <custom class="opennlp.tools.util.featuregen.FeatureGenWithSerializerMapping"/>
 </generators>

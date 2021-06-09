@@ -24,6 +24,7 @@ import java.util.Collections;
 import java.util.List;
 
 import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.util.Span;
 import opennlp.tools.cmdline.BasicCmdLineTool;
 import opennlp.tools.cmdline.CLI;
 import opennlp.tools.cmdline.CmdLineUtil;
@@ -35,7 +36,6 @@ import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.common.util.Span;
 
 public final class TokenNameFinderTool extends BasicCmdLineTool {
 
@@ -92,10 +92,10 @@ public final class TokenNameFinderTool extends BasicCmdLineTool {
           // Simple way to drop intersecting spans, otherwise the
           // NameSample is invalid
           Span[] reducedNames = NameFinderME.dropOverlappingSpans(
-                  names.toArray(new Span[names.size()]));
+              names.toArray(new Span[names.size()]));
 
           NameSample nameSample = new NameSample(whitespaceTokenizerLine,
-                  reducedNames, false);
+              reducedNames, false);
 
           System.out.println(nameSample);
 

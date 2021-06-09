@@ -28,14 +28,14 @@ public class WordClusterFeatureGenerator implements AdaptiveFeatureGenerator {
   private boolean lowerCaseDictionary;
 
   public WordClusterFeatureGenerator(WordClusterDictionary dict,
-      String dictResourceKey, boolean lowerCaseDictionary) {
+                                     String dictResourceKey, boolean lowerCaseDictionary) {
     tokenDictionary = dict;
     resourceName = dictResourceKey;
     this.lowerCaseDictionary = lowerCaseDictionary;
   }
 
   public void createFeatures(List<String> features, String[] tokens, int index,
-      String[] previousOutcomes) {
+                             String[] previousOutcomes) {
 
     String clusterId;
     if (lowerCaseDictionary) {

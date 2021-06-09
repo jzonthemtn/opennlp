@@ -17,11 +17,11 @@
 
 package opennlp.tools.doccat;
 
-import opennlp.common.doccat.FeatureGenerator;
-
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Map;
+
+import opennlp.common.doccat.FeatureGenerator;
 
 /**
  * Context generator for document categorizer

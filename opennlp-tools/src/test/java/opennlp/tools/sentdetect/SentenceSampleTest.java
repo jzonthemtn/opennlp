@@ -35,6 +35,14 @@ import opennlp.common.util.Span;
  */
 public class SentenceSampleTest {
 
+  public static SentenceSample createGoldSample() {
+    return new SentenceSample("1. 2.", new Span(0, 2), new Span(3, 5));
+  }
+
+  public static SentenceSample createPredSample() {
+    return new SentenceSample("1. 2.", new Span(0, 1), new Span(4, 5));
+  }
+
   @Test
   public void testRetrievingContent() {
     SentenceSample sample = new SentenceSample("1. 2.",
@@ -81,13 +89,5 @@ public class SentenceSampleTest {
     Assert.assertTrue(createGoldSample().equals(createGoldSample()));
     Assert.assertFalse(createPredSample().equals(createGoldSample()));
     Assert.assertFalse(createPredSample().equals(new Object()));
-  }
-
-  public static SentenceSample createGoldSample() {
-    return new SentenceSample("1. 2.", new Span(0, 2), new Span(3, 5));
-  }
-
-  public static SentenceSample createPredSample() {
-    return new SentenceSample("1. 2.", new Span(0, 1), new Span(4, 5));
   }
 }

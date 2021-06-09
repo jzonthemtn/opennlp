@@ -34,12 +34,11 @@ public class DocumentCategorizerEventStream extends AbstractEventStream<Document
   /**
    * Initializes the current instance via samples and feature generators.
    *
-   * @param data {@link ObjectStream} of {@link DocumentSample}s
-   *
+   * @param data              {@link ObjectStream} of {@link DocumentSample}s
    * @param featureGenerators the feature generators
    */
   public DocumentCategorizerEventStream(ObjectStream<DocumentSample> data,
-      FeatureGenerator... featureGenerators) {
+                                        FeatureGenerator... featureGenerators) {
     super(data);
 
     mContextGenerator =

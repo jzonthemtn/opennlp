@@ -23,11 +23,11 @@ import java.util.List;
 import java.util.Objects;
 
 import opennlp.common.tokenize.Detokenizer;
+import opennlp.common.util.Span;
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.common.util.Span;
 
 public class DetokenizeSentenceSampleStream
     extends FilterObjectStream<SentenceSample, SentenceSample> {

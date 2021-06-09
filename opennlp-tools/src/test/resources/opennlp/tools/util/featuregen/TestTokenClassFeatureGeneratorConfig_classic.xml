@@ -20,5 +20,5 @@
 -->
 
 <generators>
-	<tokenclass wordAndClass="true"/>
+    <tokenclass wordAndClass="true"/>
 </generators>

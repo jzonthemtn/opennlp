@@ -61,7 +61,7 @@ public class DummyLemmatizer implements Lemmatizer {
 
   @Override
   public List<List<String>> lemmatize(List<String> toks,
-      List<String> tags) {
+                                      List<String> tags) {
     return null;
   }
 

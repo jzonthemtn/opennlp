@@ -21,10 +21,10 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 
-import opennlp.common.lemmatizer.Lemmatizer;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.lemmatizer.Lemmatizer;
 import opennlp.morfologik.builder.POSDictionayBuilderTest;
 
 public class MorfologikLemmatizerTest {

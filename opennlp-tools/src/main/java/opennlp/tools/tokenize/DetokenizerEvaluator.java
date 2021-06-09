@@ -20,8 +20,8 @@ package opennlp.tools.tokenize;
 import java.util.ArrayList;
 
 import opennlp.common.tokenize.Detokenizer;
-import opennlp.tools.cmdline.tokenizer.DetokenEvaluationErrorListener;
 import opennlp.common.util.Span;
+import opennlp.tools.cmdline.tokenizer.DetokenEvaluationErrorListener;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.FMeasure;
 

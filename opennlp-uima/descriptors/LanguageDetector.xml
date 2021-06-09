@@ -20,73 +20,73 @@
 -->
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
-	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-	<primitive>true</primitive>
-	<annotatorImplementationName>opennlp.uima.doccat.LanguageDetector</annotatorImplementationName>
-	<analysisEngineMetaData>
-		<name>LanguageDetector</name>
-		<description></description>
-		<version>${project.version}</version>
-		<vendor>Apache Software Foundation</vendor>
-		<configurationParameters>
-			<configurationParameter>
-				<name>opennlp.uima.SentenceType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-		</configurationParameters>
-		<configurationParameterSettings>
-			<nameValuePair>
-				<name>opennlp.uima.SentenceType</name>
-				<value>
-					<string>opennlp.uima.Sentence</string>
-				</value>
-			</nameValuePair>
-		</configurationParameterSettings>
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>opennlp.uima.doccat.LanguageDetector</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>LanguageDetector</name>
+        <description></description>
+        <version>${project.version}</version>
+        <vendor>Apache Software Foundation</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>opennlp.uima.SentenceType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+        </configurationParameters>
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>opennlp.uima.SentenceType</name>
+                <value>
+                    <string>opennlp.uima.Sentence</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
 
-		<typeSystemDescription>
-			<imports>
-				<import location="TypeSystem.xml" />
-			</imports>
-		</typeSystemDescription>
-		
-		<capabilities>
-			<capability>
-				<inputs />
-				<outputs />
-				<languagesSupported>
-					<language>en</language>
-				</languagesSupported>
-			</capability>
-		</capabilities>
-	</analysisEngineMetaData>
-	
-	<externalResourceDependencies>
-		<externalResourceDependency>
-			<key>opennlp.uima.ModelName</key>
-			<interfaceName>opennlp.uima.doccat.DoccatModelResource</interfaceName>
-		</externalResourceDependency>
-	</externalResourceDependencies>
-	
-	<resourceManagerConfiguration>
+        <typeSystemDescription>
+            <imports>
+                <import location="TypeSystem.xml"/>
+            </imports>
+        </typeSystemDescription>
 
-		<externalResources>
-			<externalResource>
-				<name>DoccatModel</name>
-				<fileResourceSpecifier>
-					<fileUrl>file:mlang.bin</fileUrl>
-				</fileResourceSpecifier>
-				<implementationName>opennlp.uima.doccat.DoccatModelResourceImpl</implementationName>
-			</externalResource>
-		</externalResources>
-		
-		<externalResourceBindings>
-			<externalResourceBinding>
-				<key>opennlp.uima.ModelName</key>
-				<resourceName>DoccatModel</resourceName>
-			</externalResourceBinding>
-		</externalResourceBindings>
-	</resourceManagerConfiguration>
-			
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs/>
+                <languagesSupported>
+                    <language>en</language>
+                </languagesSupported>
+            </capability>
+        </capabilities>
+    </analysisEngineMetaData>
+
+    <externalResourceDependencies>
+        <externalResourceDependency>
+            <key>opennlp.uima.ModelName</key>
+            <interfaceName>opennlp.uima.doccat.DoccatModelResource</interfaceName>
+        </externalResourceDependency>
+    </externalResourceDependencies>
+
+    <resourceManagerConfiguration>
+
+        <externalResources>
+            <externalResource>
+                <name>DoccatModel</name>
+                <fileResourceSpecifier>
+                    <fileUrl>file:mlang.bin</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.doccat.DoccatModelResourceImpl</implementationName>
+            </externalResource>
+        </externalResources>
+
+        <externalResourceBindings>
+            <externalResourceBinding>
+                <key>opennlp.uima.ModelName</key>
+                <resourceName>DoccatModel</resourceName>
+            </externalResourceBinding>
+        </externalResourceBindings>
+    </resourceManagerConfiguration>
+
 </analysisEngineDescription>

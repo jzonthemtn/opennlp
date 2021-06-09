@@ -27,33 +27,34 @@ Welcome to Apache OpenNLP!
 
 The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
 
-This toolkit is written completely in Java and provides support for common NLP tasks, such as tokenization,
- sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing,
-  coreference resolution, language detection and more!
+This toolkit is written completely in Java and provides support for common NLP tasks, such as tokenization, sentence
+segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, coreference resolution, language
+detection and more!
 
 These tasks are usually required to build more advanced text processing services.
 
 The goal of the OpenNLP project is to be a mature toolkit for the above mentioned tasks.
 
-An additional goal is to provide a large number of pre-built models for a variety of languages, as
-well as the annotated text resources that those models are derived from.
+An additional goal is to provide a large number of pre-built models for a variety of languages, as well as the annotated
+text resources that those models are derived from.
 
 Presently, OpenNLP includes common classifiers such as Maximum Entropy, Perceptron and Naive Bayes.
 
-OpenNLP can be used both programmatically through its Java API or from a terminal through its CLI. 
-OpenNLP API can be easily plugged into distributed streaming data pipelines like Apache Flink, Apache NiFi, Apache Spark.
+OpenNLP can be used both programmatically through its Java API or from a terminal through its CLI. OpenNLP API can be
+easily plugged into distributed streaming data pipelines like Apache Flink, Apache NiFi, Apache Spark.
 
 ## Useful Links
-       
+
 For additional information, visit the [OpenNLP Home Page](http://opennlp.apache.org/)
 
 You can use OpenNLP with any language, demo models are provided [here](http://opennlp.sourceforge.net/models-1.5/).
 
-The models are fully compatible with the latest release, they can be used for testing or getting started. 
+The models are fully compatible with the latest release, they can be used for testing or getting started.
 
 Please train your own models for all other use cases.
 
-Documentation, including JavaDocs, code usage and command-line interface examples are available [here](http://opennlp.apache.org/docs/)
+Documentation, including JavaDocs, code usage and command-line interface examples are
+available [here](http://opennlp.apache.org/docs/)
 
 You can also follow our [mailing lists](http://opennlp.apache.org/mailing-lists.html) for news and updates.
 
@@ -107,6 +108,9 @@ mvn install
 
 ## Contributing
 
-The Apache OpenNLP project is developed by volunteers and is always looking for new contributors to work on all parts of the project. Every contribution is welcome and needed to make it better. A contribution can be anything from a small documentation typo fix to a new component.
+The Apache OpenNLP project is developed by volunteers and is always looking for new contributors to work on all parts of
+the project. Every contribution is welcome and needed to make it better. A contribution can be anything from a small
+documentation typo fix to a new component.
 
-If you would like to get involved please follow the instructions [here](https://github.com/apache/opennlp/blob/master/.github/CONTRIBUTING.md)
+If you would like to get involved please follow the
+instructions [here](https://github.com/apache/opennlp/blob/master/.github/CONTRIBUTING.md)

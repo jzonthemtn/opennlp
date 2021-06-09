@@ -25,10 +25,10 @@
             <definition/>
             <suffix/>
             <prefix/>
-            <window prevLength = "2" nextLength = "2">
+            <window prevLength="2" nextLength="2">
                 <token/>
             </window>
-            <window prevLength = "2" nextLength = "2">
+            <window prevLength="2" nextLength="2">
                 <sentence begin="true" end="false"/>
             </window>
             <tokenclass/>

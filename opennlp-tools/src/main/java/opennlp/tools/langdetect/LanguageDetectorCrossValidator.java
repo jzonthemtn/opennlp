@@ -44,7 +44,7 @@ public class LanguageDetectorCrossValidator {
    */
   public LanguageDetectorCrossValidator(TrainingParameters mlParams,
                                         LanguageDetectorFactory factory,
-                                        LanguageDetectorEvaluationMonitor ... listeners) {
+                                        LanguageDetectorEvaluationMonitor... listeners) {
     this.params = mlParams;
     this.listeners = listeners;
     this.factory = factory;
@@ -53,11 +53,8 @@ public class LanguageDetectorCrossValidator {
   /**
    * Starts the evaluation.
    *
-   * @param samples
-   *          the data to train and test
-   * @param nFolds
-   *          number of folds
-   *
+   * @param samples the data to train and test
+   * @param nFolds  number of folds
    * @throws IOException
    */
   public void evaluate(ObjectStream<LanguageSample> samples, int nFolds)

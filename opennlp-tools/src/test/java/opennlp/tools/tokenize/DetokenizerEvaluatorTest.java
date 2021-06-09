@@ -20,10 +20,10 @@ package opennlp.tools.tokenize;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
-import opennlp.common.tokenize.Detokenizer;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.tokenize.Detokenizer;
 import opennlp.tools.cmdline.tokenizer.DetokenEvaluationErrorListener;
 import opennlp.tools.util.InvalidFormatException;
 

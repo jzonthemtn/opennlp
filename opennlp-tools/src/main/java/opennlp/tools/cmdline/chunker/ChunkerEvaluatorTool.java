@@ -21,7 +21,11 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import opennlp.tools.chunker.*;
+import opennlp.tools.chunker.ChunkSample;
+import opennlp.tools.chunker.ChunkerEvaluationMonitor;
+import opennlp.tools.chunker.ChunkerEvaluator;
+import opennlp.tools.chunker.ChunkerME;
+import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.cmdline.AbstractEvaluatorTool;
 import opennlp.tools.cmdline.PerformanceMonitor;
 import opennlp.tools.cmdline.TerminateToolException;
@@ -33,9 +37,6 @@ import opennlp.tools.util.eval.EvaluationMonitor;
 
 public final class ChunkerEvaluatorTool
     extends AbstractEvaluatorTool<ChunkSample, EvalToolParams> {
-
-  interface EvalToolParams extends EvaluatorParams, DetailedFMeasureEvaluatorParams {
-  }
 
   public ChunkerEvaluatorTool() {
     super(ChunkSample.class, EvalToolParams.class);
@@ -97,5 +98,8 @@ public final class ChunkerEvaluatorTool
     } else {
       System.out.println(detailedFMeasureListener);
     }
+  }
+
+  interface EvalToolParams extends EvaluatorParams, DetailedFMeasureEvaluatorParams {
   }
 }

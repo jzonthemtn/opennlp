@@ -59,11 +59,26 @@ public class DocumentCategorizerME implements DocumentCategorizer {
         .getFactory().getFeatureGenerators());
   }
 
+  public static DoccatModel train(String languageCode, ObjectStream<DocumentSample> samples,
+                                  TrainingParameters mlParams, DoccatFactory factory)
+      throws IOException {
+
+    Map<String, String> manifestInfoEntries = new HashMap<>();
+
+    EventTrainer trainer = TrainerFactory.getEventTrainer(
+        mlParams, manifestInfoEntries);
+
+    MaxentModel model = trainer.train(
+        new DocumentCategorizerEventStream(samples, factory.getFeatureGenerators()));
+
+    return new DoccatModel(languageCode, model, manifestInfoEntries, factory);
+  }
+
   /**
    * Categorize the given text provided as tokens along with
    * the provided extra information
    *
-   * @param text text tokens to categorize
+   * @param text             text tokens to categorize
    * @param extraInformation additional information
    */
   @Override
@@ -146,20 +161,5 @@ public class DocumentCategorizerME implements DocumentCategorizer {
 
   public String getAllResults(double[] results) {
     return model.getMaxentModel().getAllOutcomes(results);
-  }
-
-  public static DoccatModel train(String languageCode, ObjectStream<DocumentSample> samples,
-      TrainingParameters mlParams, DoccatFactory factory)
-          throws IOException {
-
-    Map<String, String> manifestInfoEntries = new HashMap<>();
-
-    EventTrainer trainer = TrainerFactory.getEventTrainer(
-        mlParams, manifestInfoEntries);
-
-    MaxentModel model = trainer.train(
-        new DocumentCategorizerEventStream(samples, factory.getFeatureGenerators()));
-
-    return new DoccatModel(languageCode, model, manifestInfoEntries, factory);
   }
 }

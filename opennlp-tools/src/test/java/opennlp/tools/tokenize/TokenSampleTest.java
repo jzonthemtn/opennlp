@@ -25,10 +25,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
-import opennlp.common.tokenize.Detokenizer;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.tokenize.Detokenizer;
 import opennlp.common.util.Span;
 
 public class TokenSampleTest {

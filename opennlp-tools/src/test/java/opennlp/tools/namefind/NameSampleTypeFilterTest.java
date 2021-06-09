@@ -35,16 +35,14 @@ import opennlp.tools.util.PlainTextByLineStream;
 
 public class NameSampleTypeFilterTest {
 
-  private static NameSampleTypeFilter filter;
-
   private static final String text = "<START:organization> NATO <END> Secretary - General " +
       "<START:person> Anders Fogh Rasmussen <END> made clear that despite an intensifying " +
       "insurgency and uncertainty over whether <START:location> U . S . <END> President " +
       "<START:person> Barack Obama <END> will send more troops , <START:location> NATO <END> " +
       "will remain in <START:location> Afghanistan <END> .";
-
   private static final String person = "person";
   private static final String organization = "organization";
+  private static NameSampleTypeFilter filter;
 
   @Test
   public void testNoFilter() throws IOException {

@@ -22,10 +22,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import opennlp.common.doccat.FeatureGenerator;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.doccat.FeatureGenerator;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
@@ -80,8 +80,8 @@ public class DoccatFactoryTest {
 
   @Test
   public void testCustom() throws IOException {
-    FeatureGenerator[] featureGenerators = { new BagOfWordsFeatureGenerator(),
-        new NGramFeatureGenerator(), new NGramFeatureGenerator(2,3) };
+    FeatureGenerator[] featureGenerators = {new BagOfWordsFeatureGenerator(),
+        new NGramFeatureGenerator(), new NGramFeatureGenerator(2, 3)};
 
     DoccatFactory factory = new DoccatFactory(featureGenerators);
 
@@ -104,7 +104,7 @@ public class DoccatFactoryTest {
         factory.getFeatureGenerators()[0].getClass());
     Assert.assertEquals(NGramFeatureGenerator.class,
         factory.getFeatureGenerators()[1].getClass());
-    Assert.assertEquals(NGramFeatureGenerator.class,factory.getFeatureGenerators()[2].getClass());
+    Assert.assertEquals(NGramFeatureGenerator.class, factory.getFeatureGenerators()[2].getClass());
   }
 
 }

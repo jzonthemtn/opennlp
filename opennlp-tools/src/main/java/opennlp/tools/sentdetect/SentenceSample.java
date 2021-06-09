@@ -51,7 +51,7 @@ public class SentenceSample implements Serializable {
       if (sentence.getEnd() > document.length()) {
         throw new IllegalArgumentException(
             String.format("Sentence span is outside of document text [len %d] and span %s",
-            document.length(), sentence));
+                document.length(), sentence));
       }
     }
   }
@@ -89,7 +89,6 @@ public class SentenceSample implements Serializable {
    * Retrieves the sentences.
    *
    * @return the begin indexes of the sentences in the document.
-
    */
   public Span[] getSentences() {
     return sentences.toArray(new Span[sentences.size()]);

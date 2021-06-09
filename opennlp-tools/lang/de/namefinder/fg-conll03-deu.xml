@@ -20,22 +20,22 @@
 <!-- This name Finder feature generator is optimized for the German CONLL 03 shared task.
      For best results use the Perceptron classifier with 300 Iterations and zero cutoff. -->
 <generators>
-  <cache> 
-    <generators>
-      <window prevLength = "3" nextLength = "3">          
-        <tokenclass/>
-      </window>
-      <window prevLength = "3" nextLength = "3">                
-        <token/>
-      </window>
-      <tokenpattern/> 
-      <bigram/>
-      <!-- definition/ -->
-      <sentence begin="true" end="true"/>
-      <prevmap/>
-	  <suffix/>
-	  <prefix/>
-	  <charngram min = "3" max="4"/>
-    </generators>
-  </cache> 
+    <cache>
+        <generators>
+            <window prevLength="3" nextLength="3">
+                <tokenclass/>
+            </window>
+            <window prevLength="3" nextLength="3">
+                <token/>
+            </window>
+            <tokenpattern/>
+            <bigram/>
+            <!-- definition/ -->
+            <sentence begin="true" end="true"/>
+            <prevmap/>
+            <suffix/>
+            <prefix/>
+            <charngram min="3" max="4"/>
+        </generators>
+    </cache>
 </generators>

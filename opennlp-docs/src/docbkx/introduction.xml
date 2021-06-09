@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
-"http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[
-]>
+        "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[
+        ]>
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -22,21 +22,21 @@ under the License.
 -->
 
 <chapter id="opennlp">
-<title>Introduction</title>
+    <title>Introduction</title>
     <section id="intro.description">
         <title>Description</title>
         <para>
-        The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
-        It supports the most common NLP tasks, such as tokenization, sentence segmentation,
-        part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
-        These tasks are usually required to build more advanced text processing services.
-        OpenNLP also includes maximum entropy and perceptron based machine learning.
+            The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+            It supports the most common NLP tasks, such as tokenization, sentence segmentation,
+            part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+            These tasks are usually required to build more advanced text processing services.
+            OpenNLP also includes maximum entropy and perceptron based machine learning.
         </para>
 
         <para>
-        The goal of the OpenNLP project will be to create a mature toolkit for the abovementioned tasks.
-        An additional goal is to provide a large number of pre-built models for a variety of languages, as
-        well as the annotated text resources that those models are derived from.
+            The goal of the OpenNLP project will be to create a mature toolkit for the abovementioned tasks.
+            An additional goal is to provide a large number of pre-built models for a variety of languages, as
+            well as the annotated text resources that those models are derived from.
         </para>
     </section>
 
@@ -64,7 +64,7 @@ under the License.
             A model is usually loaded by providing a FileInputStream with a model to a
             constructor of the model class:
             <programlisting language="java">
-                    <![CDATA[
+                <![CDATA[
 try (InputStream modelIn = new FileInputStream("lang-model-name.bin")) {
   SomeModel model = new SomeModel(modelIn);
 }
@@ -72,18 +72,18 @@ try (InputStream modelIn = new FileInputStream("lang-model-name.bin")) {
             </programlisting>
         </para>
         <para>
-        After the model is loaded the tool itself can be instantiated.
-        <programlisting language="java">
+            After the model is loaded the tool itself can be instantiated.
+            <programlisting language="java">
                 <![CDATA[
 ToolName toolName = new ToolName(model);]]>
-        </programlisting>
-        After the tool is instantiated, the processing task can be executed. The input and the
-        output formats are specific to the tool, but often the output is an array of String,
-        and the input is a String or an array of String.
-        <programlisting language="java">
+            </programlisting>
+            After the tool is instantiated, the processing task can be executed. The input and the
+            output formats are specific to the tool, but often the output is an array of String,
+            and the input is a String or an array of String.
+            <programlisting language="java">
                 <![CDATA[
 String output[] = toolName.executeTask("This is a sample text.");]]>
-        </programlisting>
+            </programlisting>
         </para>
     </section>
 
@@ -98,12 +98,12 @@ String output[] = toolName.executeTask("This is a sample text.");]]>
                 compatible systems: opennlp.
             </para>
         </section>
-        
+
         <section id="intro.cli.toolslist">
             <title>List of tools</title>
             <para>
-               	The list of command line tools for Apache OpenNLP <?eval ${project.version}?>,
-               	as well as a description of its arguments, is available at section <xref linkend="tools.cli"/>.
+                The list of command line tools for Apache OpenNLP <?eval ${project.version}?>,
+                as well as a description of its arguments, is available at section<xref linkend="tools.cli"/>.
             </para>
         </section>
 
@@ -131,12 +131,12 @@ String output[] = toolName.executeTask("This is a sample text.");]]>
             <para>
                 Apache OpenNLP provides a common command line script to access all its tools:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp]]>
-                 </screen>
+                </screen>
                 This script prints current version of the library and lists all available tools:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 OpenNLP <VERSION>. Usage: opennlp TOOL
 where TOOL is one of:
   Doccat                            learnable document categorizer
@@ -185,15 +185,15 @@ Example: opennlp SimpleTokenizer help
             <para>OpenNLP tools have similar command line structure and options. To discover tool
                 options, run it with no parameters:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp ToolName]]>
-                 </screen>
+                </screen>
                 The tool will output two blocks of help.
             </para>
             <para>
                 The first block describes the general structure of this tool command line:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 Usage: opennlp TokenizerTrainer[.namefinder|.conllx|.pos] [-abbDict path] ...  -model modelFile ...]]>
                 </screen>
                 The general structure of this tool command line includes the obligatory tool name
@@ -206,11 +206,11 @@ Usage: opennlp TokenizerTrainer[.namefinder|.conllx|.pos] [-abbDict path] ...  -
                 Each format might have its own parameters, which are displayed if the tool is
                 executed without or with help parameter:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp TokenizerTrainer.conllx help]]>
                 </screen>
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 Usage: opennlp TokenizerTrainer.conllx [-abbDict path] [-alphaNumOpt isAlphaNumOpt] ...
 
 Arguments description:
@@ -221,14 +221,14 @@ Arguments description:
                 To switch the tool to a specific format, add a dot and the format name after
                 the tool name:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp TokenizerTrainer.conllx -model en-pos.bin ...]]>
                 </screen>
             </para>
             <para>
                 The second block of the help message describes the individual arguments:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 Arguments description:
         -type maxent|perceptron|perceptron_sequence
                 The type of the token name finder model. One of maxent|perceptron|perceptron_sequence.
@@ -240,9 +240,9 @@ Arguments description:
             <para>
                 Most tools for processing need to be provided at least a model:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp ToolName lang-model-name.bin]]>
-                 </screen>
+                </screen>
                 When tool is executed this way, the model is loaded and the tool is waiting for
                 the input from standard input. This input is processed and printed to standard
                 output.
@@ -250,7 +250,7 @@ $ opennlp ToolName lang-model-name.bin]]>
             <para>Alternative, or one should say, most commonly used way is to use console input and
                 output redirection options to provide also an input and an output files:
                 <screen>
-            <![CDATA[
+                    <![CDATA[
 $ opennlp ToolName lang-model-name.bin < input.txt > output.txt]]>
                 </screen>
             </para>
@@ -275,24 +275,24 @@ $ opennlp ToolName lang-model-name.bin < input.txt > output.txt]]>
             <para>
                 A generic example of a command line to launch a tool trainer might be:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp ToolNameTrainer -model en-model-name.bin -lang en -data input.train -encoding UTF-8]]>
-                 </screen>
+                </screen>
                 or with a format:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp ToolNameTrainer.conll03 -model en-model-name.bin -lang en -data input.train \
                                   -types per -encoding UTF-8]]>
-                 </screen>
+                </screen>
             </para>
             <para>Most tools for model evaluation are similar to those for task execution, and
                 need to be provided fist a model name, optionally some evaluation options (such
                 as whether to print misclassified samples), and then the test data. A generic
                 example of a command line to launch an evaluation tool might be:
                 <screen>
-                <![CDATA[
+                    <![CDATA[
 $ opennlp ToolNameEvaluator -model en-model-name.bin -lang en -data input.test -encoding UTF-8]]>
-                 </screen>
+                </screen>
             </para>
         </section>
     </section>

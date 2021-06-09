@@ -20,61 +20,61 @@
 -->
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
-	<frameworkImplementation>org.apache.uima.java
-	</frameworkImplementation>
-	<primitive>true</primitive>
-	<annotatorImplementationName>opennlp.uima.sentdetect.SentenceDetector</annotatorImplementationName>
-	<analysisEngineMetaData>
-		<name>Sentence Detector</name>
-		<description></description>
-		<version>${project.version}</version>
-		<vendor>Apache Software Foundation</vendor>
-		<configurationParameters>
-			<configurationParameter>
-				<name>opennlp.uima.SentenceType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-			<configurationParameter>
-				<name>opennlp.uima.ContainerType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>false</mandatory>
-			</configurationParameter>
-		</configurationParameters>
-		
-		<configurationParameterSettings>
-			
-			<nameValuePair>
-				<name>opennlp.uima.SentenceType</name>
-				<value>
-					<string>opennlp.uima.Sentence</string>
-				</value>
-			</nameValuePair>
-		</configurationParameterSettings>
-		
-		<typeSystemDescription>
-			<imports>
-				<import location="TypeSystem.xml" />
-			</imports>
-		</typeSystemDescription>
-		
-		<capabilities>
-			<capability>
-				<inputs />
-				<outputs />
-				<languagesSupported>
-					<language>en</language>
-				</languagesSupported>
-			</capability>
-		</capabilities>
-	</analysisEngineMetaData>
+    <frameworkImplementation>org.apache.uima.java
+    </frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>opennlp.uima.sentdetect.SentenceDetector</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>Sentence Detector</name>
+        <description></description>
+        <version>${project.version}</version>
+        <vendor>Apache Software Foundation</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>opennlp.uima.SentenceType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+            <configurationParameter>
+                <name>opennlp.uima.ContainerType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+        </configurationParameters>
 
-	<externalResourceDependencies>
-		<externalResourceDependency>
-			<key>opennlp.uima.ModelName</key>
-			<interfaceName>opennlp.uima.sentdetect.SentenceModelResource</interfaceName>
-		</externalResourceDependency>
-	</externalResourceDependencies>
+        <configurationParameterSettings>
+
+            <nameValuePair>
+                <name>opennlp.uima.SentenceType</name>
+                <value>
+                    <string>opennlp.uima.Sentence</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
+
+        <typeSystemDescription>
+            <imports>
+                <import location="TypeSystem.xml"/>
+            </imports>
+        </typeSystemDescription>
+
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs/>
+                <languagesSupported>
+                    <language>en</language>
+                </languagesSupported>
+            </capability>
+        </capabilities>
+    </analysisEngineMetaData>
+
+    <externalResourceDependencies>
+        <externalResourceDependency>
+            <key>opennlp.uima.ModelName</key>
+            <interfaceName>opennlp.uima.sentdetect.SentenceModelResource</interfaceName>
+        </externalResourceDependency>
+    </externalResourceDependencies>
 </analysisEngineDescription>

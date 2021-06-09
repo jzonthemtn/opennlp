@@ -16,23 +16,23 @@
 -->
 
 <assembly>
-  <id>src</id>
-  <formats>
-    <format>tar.gz</format>
-    <format>zip</format>
-  </formats>
-  
-  <baseDirectory>/apache-opennlp-${project.version}-src</baseDirectory>
-  
-  <fileSets>
-    <fileSet>
-      <directory>../</directory>
-      <excludes>
-        <exclude>**/target/**</exclude>
-        <exclude>**/.*/**</exclude>
-        <exclude>**/pom.xml.releaseBackup</exclude>
-        <exclude>**/release.properties</exclude>
-      </excludes>
-    </fileSet>
-  </fileSets>
+    <id>src</id>
+    <formats>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+
+    <baseDirectory>/apache-opennlp-${project.version}-src</baseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>../</directory>
+            <excludes>
+                <exclude>**/target/**</exclude>
+                <exclude>**/.*/**</exclude>
+                <exclude>**/pom.xml.releaseBackup</exclude>
+                <exclude>**/release.properties</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
 </assembly>

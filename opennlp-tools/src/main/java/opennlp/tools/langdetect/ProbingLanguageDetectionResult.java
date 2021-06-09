@@ -33,7 +33,6 @@ public class ProbingLanguageDetectionResult {
   }
 
   /**
-   *
    * @return length in codepoints of text processed
    */
   public int getLength() {

@@ -20,94 +20,94 @@ under the License.
 -->
 
 <dictionary>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>"</token>
-  </entry>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>'</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>?</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>!</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>,</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>;</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>:</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>(</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>)</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>}</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>{</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>]</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>[</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>»</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>«</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>``</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>''</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>%</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.org</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.com</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.net</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>#</token>
-  </entry>
-  <entry operation="MOVE_BOTH">
-    <token>-</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>m'</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>d'</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>b'</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>mb'</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>dh'</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>lem'</token>
-  </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>"</token>
+    </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>'</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>?</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>!</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>,</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>;</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>:</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>(</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>)</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>}</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>{</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>]</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>[</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>»</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>«</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>``</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>''</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>%</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.org</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.com</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.net</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>#</token>
+    </entry>
+    <entry operation="MOVE_BOTH">
+        <token>-</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>m'</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>d'</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>b'</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>mb'</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>dh'</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>lem'</token>
+    </entry>
 </dictionary>

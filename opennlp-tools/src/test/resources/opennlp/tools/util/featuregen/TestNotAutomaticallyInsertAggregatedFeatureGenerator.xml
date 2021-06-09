@@ -20,5 +20,5 @@
 -->
 
 <featureGenerators name="test">
-  <generator class="opennlp.tools.util.featuregen.DefinitionFeatureGeneratorFactory"/>
+    <generator class="opennlp.tools.util.featuregen.DefinitionFeatureGeneratorFactory"/>
 </featureGenerators>

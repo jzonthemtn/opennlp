@@ -21,14 +21,13 @@ import java.io.File;
 import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
-
 import javax.ws.rs.core.UriBuilder;
 
-import opennlp.common.namefind.TokenNameFinder;
-import opennlp.common.tokenize.Tokenizer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
+import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.sentdetect.NewlineSentenceDetector;

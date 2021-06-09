@@ -23,7 +23,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import opennlp.common.util.Span;
-
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.sentdetect.lang.Factory;
 import opennlp.tools.util.ObjectStream;

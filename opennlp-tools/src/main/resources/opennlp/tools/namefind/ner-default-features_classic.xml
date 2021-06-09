@@ -19,18 +19,18 @@
 
 <!-- Default name finder feature generator configuration -->
 <generators>
-  <cache> 
-    <generators>
-      <window prevLength = "2" nextLength = "2">          
-        <tokenclass/>
-      </window>
-      <window prevLength = "2" nextLength = "2">                
-        <token/>
-      </window>
-      <definition/>
-      <prevmap/>
-      <bigram/>
-      <sentence begin="true" end="false"/>
-    </generators>
-  </cache> 
+    <cache>
+        <generators>
+            <window prevLength="2" nextLength="2">
+                <tokenclass/>
+            </window>
+            <window prevLength="2" nextLength="2">
+                <token/>
+            </window>
+            <definition/>
+            <prevmap/>
+            <bigram/>
+            <sentence begin="true" end="false"/>
+        </generators>
+    </cache>
 </generators>

@@ -34,14 +34,14 @@ import opennlp.tools.util.ObjectStream;
 
 public class TwentyNewsgroupSampleStreamFactory extends AbstractSampleStreamFactory<DocumentSample> {
 
+  protected <P> TwentyNewsgroupSampleStreamFactory(Class<P> params) {
+    super(params);
+  }
+
   public static void registerFactory() {
     StreamFactoryRegistry.registerFactory(DocumentSample.class,
         "20newsgroup",
         new TwentyNewsgroupSampleStreamFactory(TwentyNewsgroupSampleStreamFactory.Parameters.class));
-  }
-
-  protected <P> TwentyNewsgroupSampleStreamFactory(Class<P> params) {
-    super(params);
   }
 
   @Override
@@ -58,17 +58,14 @@ public class TwentyNewsgroupSampleStreamFactory extends AbstractSampleStreamFact
       } catch (IOException e) {
         throw new TerminateToolException(-1, "Failed to load tokenizer model!", e);
       }
-    }
-    else if (params.getRuleBasedTokenizer() != null) {
+    } else if (params.getRuleBasedTokenizer() != null) {
       String tokenizerName = params.getRuleBasedTokenizer();
 
       if ("simple".equals(tokenizerName)) {
         tokenizer = SimpleTokenizer.INSTANCE;
-      }
-      else if ("whitespace".equals(tokenizerName)) {
+      } else if ("whitespace".equals(tokenizerName)) {
         tokenizer = WhitespaceTokenizer.INSTANCE;
-      }
-      else {
+      } else {
         throw new TerminateToolException(-1, "Unkown tokenizer: " + tokenizerName);
       }
     }

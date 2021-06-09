@@ -20,7 +20,7 @@ under the License.
 -->
 
 <dictionary>
-<entry tags="NNP">
-<token>McKinsey</token>
-</entry>
+    <entry tags="NNP">
+        <token>McKinsey</token>
+    </entry>
 </dictionary>

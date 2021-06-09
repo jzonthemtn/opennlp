@@ -41,8 +41,7 @@ public class TokenFeatureGenerator implements AdaptiveFeatureGenerator {
   public void createFeatures(List<String> features, String[] tokens, int index, String[] preds) {
     if (lowercase) {
       features.add(WORD_PREFIX + "=" + StringUtil.toLowerCase(tokens[index]));
-    }
-    else {
+    } else {
       features.add(WORD_PREFIX + "=" + tokens[index]);
     }
   }

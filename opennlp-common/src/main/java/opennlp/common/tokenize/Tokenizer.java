@@ -49,8 +49,8 @@ public interface Tokenizer {
    * Splits a string into its atomic parts
    *
    * @param s The string to be tokenized.
-   * @return  The String[] with the individual tokens as the array
-   *          elements.
+   * @return The String[] with the individual tokens as the array
+   * elements.
    */
   String[] tokenize(String s);
 

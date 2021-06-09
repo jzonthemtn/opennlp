@@ -20,7 +20,7 @@ under the License.
 -->
 
 <dictionary case_sensitive="true">
-<entry tags="NNP">
-<token>McKinsey</token>
-</entry>
+    <entry tags="NNP">
+        <token>McKinsey</token>
+    </entry>
 </dictionary>

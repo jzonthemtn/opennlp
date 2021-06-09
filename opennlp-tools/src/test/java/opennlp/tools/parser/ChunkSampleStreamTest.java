@@ -19,9 +19,9 @@ package opennlp.tools.parser;
 
 import java.io.IOException;
 
-import opennlp.tools.chunker.ChunkSample;
 import org.junit.Test;
 
+import opennlp.tools.chunker.ChunkSample;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
 

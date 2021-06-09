@@ -29,7 +29,6 @@ public interface Lemmatizer {
    *
    * @param toks an array of the tokens
    * @param tags an array of the pos tags
-   *
    * @return an array of possible lemmas for each token in the sequence.
    */
   String[] lemmatize(String[] toks, String[] tags);

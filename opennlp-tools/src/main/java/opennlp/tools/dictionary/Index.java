@@ -55,7 +55,6 @@ public class Index {
    * given token.
    *
    * @param token
-   *
    * @return true if the token is contained otherwise false.
    */
   public boolean contains(String token) {

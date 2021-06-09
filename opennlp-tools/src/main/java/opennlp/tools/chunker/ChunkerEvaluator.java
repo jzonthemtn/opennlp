@@ -45,7 +45,7 @@ public class ChunkerEvaluator extends Evaluator<ChunkSample> {
    * Initializes the current instance with the given
    * {@link Chunker}.
    *
-   * @param chunker the {@link Chunker} to evaluate.
+   * @param chunker   the {@link Chunker} to evaluate.
    * @param listeners evaluation listeners
    */
   public ChunkerEvaluator(Chunker chunker, ChunkerEvaluationMonitor... listeners) {
@@ -55,14 +55,13 @@ public class ChunkerEvaluator extends Evaluator<ChunkSample> {
 
   /**
    * Evaluates the given reference {@link ChunkSample} object.
-   *
+   * <p>
    * This is done by finding the phrases with the
    * {@link Chunker} in the sentence from the reference
    * {@link ChunkSample}. The found phrases are then used to
    * calculate and update the scores.
    *
    * @param reference the reference {@link ChunkSample}.
-   *
    * @return the predicted sample
    */
   @Override

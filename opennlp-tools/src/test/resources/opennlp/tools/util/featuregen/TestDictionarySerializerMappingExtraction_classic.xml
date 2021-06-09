@@ -18,5 +18,5 @@
 -->
 
 <generators>
-  <dictionary dict="test.dictionary"/>
+    <dictionary dict="test.dictionary"/>
 </generators>

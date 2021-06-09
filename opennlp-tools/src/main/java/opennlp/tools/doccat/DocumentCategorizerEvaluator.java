@@ -42,14 +42,14 @@ public class DocumentCategorizerEvaluator extends Evaluator<DocumentSample> {
    * @param categorizer the document categorizer instance
    */
   public DocumentCategorizerEvaluator(DocumentCategorizer categorizer,
-      DoccatEvaluationMonitor ... listeners) {
+                                      DoccatEvaluationMonitor... listeners) {
     super(listeners);
     this.categorizer = categorizer;
   }
 
   /**
    * Evaluates the given reference {@link DocumentSample} object.
-   *
+   * <p>
    * This is done by categorizing the document from the provided
    * {@link DocumentSample}. The detected category is then used
    * to calculate and update the score.
@@ -66,8 +66,7 @@ public class DocumentCategorizerEvaluator extends Evaluator<DocumentSample> {
 
     if (sample.getCategory().equals(cat)) {
       accuracy.add(1);
-    }
-    else {
+    } else {
       accuracy.add(0);
     }
 
@@ -76,7 +75,7 @@ public class DocumentCategorizerEvaluator extends Evaluator<DocumentSample> {
 
   /**
    * Retrieves the accuracy of provided {@link DocumentCategorizer}.
-   *
+   * <p>
    * accuracy = correctly categorized documents / total documents
    *
    * @return the accuracy

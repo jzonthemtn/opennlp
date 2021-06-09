@@ -22,8 +22,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import opennlp.common.tokenize.Tokenizer;
-import opennlp.tools.tokenize.SimpleTokenizer;
 import opennlp.common.util.StringUtil;
+import opennlp.tools.tokenize.SimpleTokenizer;
 
 /**
  * Partitions tokens into sub-tokens based on character classes and generates
@@ -39,7 +39,7 @@ public class TokenPatternFeatureGenerator implements AdaptiveFeatureGenerator {
    * For tokinization the {@link SimpleTokenizer} is used.
    */
   public TokenPatternFeatureGenerator() {
-      this(SimpleTokenizer.INSTANCE);
+    this(SimpleTokenizer.INSTANCE);
   }
 
   /**

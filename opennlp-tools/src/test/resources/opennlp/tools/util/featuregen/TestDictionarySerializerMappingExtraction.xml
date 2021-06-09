@@ -18,7 +18,7 @@
 -->
 
 <featureGenerators name="test">
-  <generator class="opennlp.tools.util.featuregen.DictionaryFeatureGeneratorFactory">
-    <str name="dict">test.dictionary</str>
-  </generator>
+    <generator class="opennlp.tools.util.featuregen.DictionaryFeatureGeneratorFactory">
+        <str name="dict">test.dictionary</str>
+    </generator>
 </featureGenerators>

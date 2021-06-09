@@ -20,141 +20,141 @@
 -->
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
-	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-	<primitive>true</primitive>
-	<annotatorImplementationName>opennlp.uima.parser.Parser</annotatorImplementationName>
-	<analysisEngineMetaData>
-		<name>Parser</name>
-		<description></description>
-		<version>${project.version}</version>
-		<vendor>Apache Software Foundation</vendor>
-		<configurationParameters>
-			<configurationParameter>
-				<name>opennlp.uima.SentenceType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-			
-			<configurationParameter>
-				<name>opennlp.uima.TokenType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>opennlp.uima.parser.Parser</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>Parser</name>
+        <description></description>
+        <version>${project.version}</version>
+        <vendor>Apache Software Foundation</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>opennlp.uima.SentenceType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
 
-			<configurationParameter>
-				<name>opennlp.uima.ParseType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>			
+            <configurationParameter>
+                <name>opennlp.uima.TokenType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
 
-			<configurationParameter>
-				<name>opennlp.uima.TypeFeature</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-			
-			<configurationParameter>
-				<name>opennlp.uima.ChildrenFeature</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-			
-			<configurationParameter>
-				<name>opennlp.uima.ProbabilityFeature</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>false</mandatory>
-			</configurationParameter>
-		</configurationParameters>
-		
-		<configurationParameterSettings>
-			<nameValuePair>
-				<name>opennlp.uima.TokenType</name>
-				<value>
-					<string>opennlp.uima.Token</string>
-				</value>
-			</nameValuePair>
-			<nameValuePair>
-				<name>opennlp.uima.SentenceType</name>
-				<value>
-					<string>opennlp.uima.Sentence</string>
-				</value>
-			</nameValuePair>
-			<nameValuePair>
-				<name>opennlp.uima.ParseType</name>
-				<value>
-					<string>opennlp.uima.Parse</string>
-				</value>
-			</nameValuePair>
-			<nameValuePair>
-				<name>opennlp.uima.TypeFeature</name>
-				<value>
-					<string>parseType</string>
-				</value>
-			</nameValuePair>
-			<nameValuePair>
-				<name>opennlp.uima.ChildrenFeature</name>
-				<value>
-					<string>children</string>
-				</value>
-			</nameValuePair>
-			<nameValuePair>
-				<name>opennlp.uima.ProbabilityFeature</name>
-				<value>
-					<string>prob</string>
-				</value>
-			</nameValuePair>
-		</configurationParameterSettings>
-		
-		<typeSystemDescription>
-			<imports>
-				<import location="TypeSystem.xml" />
-			</imports>
-		</typeSystemDescription>
-		
-		<capabilities>
-			<capability>
-				<inputs />
-				<outputs />
-				<languagesSupported>
-					<language>en</language>
-				</languagesSupported>
-			</capability>
-		</capabilities>
-		<operationalProperties>
-			<modifiesCas>true</modifiesCas>
-			<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
-		</operationalProperties>
-	</analysisEngineMetaData>
-	
-	<resourceManagerConfiguration>
-		<externalResources>
-			<externalResource>
-				<name>ParserModel</name>
-				<fileResourceSpecifier>
-					<fileUrl>file:en-parser-chunking.bin</fileUrl>
-				</fileResourceSpecifier>
-				<implementationName>opennlp.uima.parser.ParserModelResourceImpl</implementationName>
-			</externalResource>
-		</externalResources>
+            <configurationParameter>
+                <name>opennlp.uima.ParseType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
 
-		<externalResourceBindings>
-			<externalResourceBinding>
-				<key>opennlp.uima.ModelName</key>
-				<resourceName>ParserModel</resourceName>
-			</externalResourceBinding>
-		</externalResourceBindings>
-	</resourceManagerConfiguration>
-		
-	<externalResourceDependencies>
-		<externalResourceDependency>
-			<key>opennlp.uima.ModelName</key>
-			<interfaceName>opennlp.uima.parser.ParserModelResource</interfaceName>
-		</externalResourceDependency>
-	</externalResourceDependencies>
+            <configurationParameter>
+                <name>opennlp.uima.TypeFeature</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+
+            <configurationParameter>
+                <name>opennlp.uima.ChildrenFeature</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+
+            <configurationParameter>
+                <name>opennlp.uima.ProbabilityFeature</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+        </configurationParameters>
+
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>opennlp.uima.TokenType</name>
+                <value>
+                    <string>opennlp.uima.Token</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.SentenceType</name>
+                <value>
+                    <string>opennlp.uima.Sentence</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.ParseType</name>
+                <value>
+                    <string>opennlp.uima.Parse</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.TypeFeature</name>
+                <value>
+                    <string>parseType</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.ChildrenFeature</name>
+                <value>
+                    <string>children</string>
+                </value>
+            </nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.ProbabilityFeature</name>
+                <value>
+                    <string>prob</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
+
+        <typeSystemDescription>
+            <imports>
+                <import location="TypeSystem.xml"/>
+            </imports>
+        </typeSystemDescription>
+
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs/>
+                <languagesSupported>
+                    <language>en</language>
+                </languagesSupported>
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+        </operationalProperties>
+    </analysisEngineMetaData>
+
+    <resourceManagerConfiguration>
+        <externalResources>
+            <externalResource>
+                <name>ParserModel</name>
+                <fileResourceSpecifier>
+                    <fileUrl>file:en-parser-chunking.bin</fileUrl>
+                </fileResourceSpecifier>
+                <implementationName>opennlp.uima.parser.ParserModelResourceImpl</implementationName>
+            </externalResource>
+        </externalResources>
+
+        <externalResourceBindings>
+            <externalResourceBinding>
+                <key>opennlp.uima.ModelName</key>
+                <resourceName>ParserModel</resourceName>
+            </externalResourceBinding>
+        </externalResourceBindings>
+    </resourceManagerConfiguration>
+
+    <externalResourceDependencies>
+        <externalResourceDependency>
+            <key>opennlp.uima.ModelName</key>
+            <interfaceName>opennlp.uima.parser.ParserModelResource</interfaceName>
+        </externalResourceDependency>
+    </externalResourceDependencies>
 </analysisEngineDescription>

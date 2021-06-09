@@ -43,14 +43,14 @@ public class LanguageDetectorEvaluator extends Evaluator<LanguageSample> {
    * @param langDetect the language detector instance
    */
   public LanguageDetectorEvaluator(LanguageDetector langDetect,
-                                   LanguageDetectorEvaluationMonitor ... listeners) {
+                                   LanguageDetectorEvaluationMonitor... listeners) {
     super(listeners);
     this.languageDetector = langDetect;
   }
 
   /**
    * Evaluates the given reference {@link LanguageSample} object.
-   *
+   * <p>
    * This is done by categorizing the document from the provided
    * {@link LanguageSample}. The detected language is then used
    * to calculate and update the score.
@@ -65,8 +65,7 @@ public class LanguageDetectorEvaluator extends Evaluator<LanguageSample> {
 
     if (sample.getLanguage().getLang().equals(predicted.getLang())) {
       accuracy.add(1);
-    }
-    else {
+    } else {
       accuracy.add(0);
     }
 
@@ -75,7 +74,7 @@ public class LanguageDetectorEvaluator extends Evaluator<LanguageSample> {
 
   /**
    * Retrieves the accuracy of provided {@link DocumentCategorizer}.
-   *
+   * <p>
    * accuracy = correctly categorized documents / total documents
    *
    * @return the accuracy

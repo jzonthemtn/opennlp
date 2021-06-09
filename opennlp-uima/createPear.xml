@@ -1,4 +1,3 @@
-
 <!--
    Licensed to the Apache Software Foundation (ASF) under one
    or more contributor license agreements.  See the NOTICE file
@@ -20,71 +19,75 @@
 
 <project name="OpenNLP" default="createPear" basedir=".">
 
-	<property name="pearDir" value="target/OpenNlpTextAnalyzer" />
+    <property name="pearDir" value="target/OpenNlpTextAnalyzer"/>
 
-	<target name="createPear">
+    <target name="createPear">
 
-		<echo>##### Creating OpenNlpTextAnalyzer pear #####</echo>
+        <echo>##### Creating OpenNlpTextAnalyzer pear #####</echo>
 
-		<!-- Copy selected descriptors into pear file -->
-		<copy todir="${pearDir}/desc" flatten="true">
-			<resources>
-				<file file="descriptors/OpenNlpTextAnalyzer.xml" />
-				<file file="descriptors/Tokenizer.xml" />
-				<file file="descriptors/SentenceDetector.xml" />
-				<file file="descriptors/DateNameFinder.xml" />
-				<file file="descriptors/LocationNameFinder.xml" />
-				<file file="descriptors/MoneyNameFinder.xml" />
-				<file file="descriptors/OrganizationNameFinder.xml" />
-				<file file="descriptors/PercentageNameFinder.xml" />
-				<file file="descriptors/PersonNameFinder.xml" />
-				<file file="descriptors/TimeNameFinder.xml" />
-				<file file="descriptors/PosTagger.xml" />
-				<file file="descriptors/Parser.xml" />
-				<file file="descriptors/Chunker.xml" />
-				<file file="descriptors/TypeSystem.xml" />
-			</resources>
-		</copy>
+        <!-- Copy selected descriptors into pear file -->
+        <copy todir="${pearDir}/desc" flatten="true">
+            <resources>
+                <file file="descriptors/OpenNlpTextAnalyzer.xml"/>
+                <file file="descriptors/Tokenizer.xml"/>
+                <file file="descriptors/SentenceDetector.xml"/>
+                <file file="descriptors/DateNameFinder.xml"/>
+                <file file="descriptors/LocationNameFinder.xml"/>
+                <file file="descriptors/MoneyNameFinder.xml"/>
+                <file file="descriptors/OrganizationNameFinder.xml"/>
+                <file file="descriptors/PercentageNameFinder.xml"/>
+                <file file="descriptors/PersonNameFinder.xml"/>
+                <file file="descriptors/TimeNameFinder.xml"/>
+                <file file="descriptors/PosTagger.xml"/>
+                <file file="descriptors/Parser.xml"/>
+                <file file="descriptors/Chunker.xml"/>
+                <file file="descriptors/TypeSystem.xml"/>
+            </resources>
+        </copy>
 
-		<copy todir="${pearDir}/metadata" flatten="true">
-			<resources>
-				<file file="metadata/install.xml" />
-			</resources>
-		</copy>
+        <copy todir="${pearDir}/metadata" flatten="true">
+            <resources>
+                <file file="metadata/install.xml"/>
+            </resources>
+        </copy>
 
         <!-- Copy necessary jar files into pear -->
         <copy tofile="${pearDir}/lib/opennlp-uima.jar">
-	        <fileset dir="target">
+            <fileset dir="target">
                 <include name="opennlp-uima-*.jar"/>
                 <exclude name="opennlp-uima-*-sources.jar"/>
                 <exclude name="opennlp-uima-*-javadoc.jar"/>
-	        </fileset>
+            </fileset>
         </copy>
 
-		<copy todir="${pearDir}/lib">
-			<fileset dir="target/dependency" />
-		</copy>
+        <copy todir="${pearDir}/lib">
+            <fileset dir="target/dependency"/>
+        </copy>
 
-		<!-- Downlaod models-->
+        <!-- Downlaod models-->
 
-		<property name="modelDir" value="${pearDir}/models" />
+        <property name="modelDir" value="${pearDir}/models"/>
 
 
-		<mkdir dir="${modelDir}" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-token.bin" dest="${modelDir}/en-token.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-sent.bin" dest="${modelDir}/en-sent.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-date.bin" dest="${modelDir}/en-ner-date.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-location.bin" dest="${modelDir}/en-ner-location.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-money.bin" dest="${modelDir}/en-ner-money.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-organization.bin" dest="${modelDir}/en-ner-organization.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-percentage.bin" dest="${modelDir}/en-ner-percentage.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-person.bin" dest="${modelDir}/en-ner-person.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-ner-time.bin" dest="${modelDir}/en-ner-time.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-pos-maxent.bin" dest="${modelDir}/en-pos-maxent.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-parser-chunking.bin" dest="${modelDir}/en-parser-chunking.bin" />
-		<get src="http://opennlp.sourceforge.net/models-1.5/en-chunker.bin" dest="${modelDir}/en-chunker.bin" />
+        <mkdir dir="${modelDir}"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-token.bin" dest="${modelDir}/en-token.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-sent.bin" dest="${modelDir}/en-sent.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-date.bin" dest="${modelDir}/en-ner-date.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-location.bin"
+             dest="${modelDir}/en-ner-location.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-money.bin" dest="${modelDir}/en-ner-money.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-organization.bin"
+             dest="${modelDir}/en-ner-organization.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-percentage.bin"
+             dest="${modelDir}/en-ner-percentage.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-person.bin" dest="${modelDir}/en-ner-person.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-ner-time.bin" dest="${modelDir}/en-ner-time.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-pos-maxent.bin" dest="${modelDir}/en-pos-maxent.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-parser-chunking.bin"
+             dest="${modelDir}/en-parser-chunking.bin"/>
+        <get src="http://opennlp.sourceforge.net/models-1.5/en-chunker.bin" dest="${modelDir}/en-chunker.bin"/>
 
-		<!-- Create pear zip file-->
-		<zip destfile="target/OpenNlpTextAnalyzer.pear" basedir="${pearDir}" />
-	</target>
+        <!-- Create pear zip file-->
+        <zip destfile="target/OpenNlpTextAnalyzer.pear" basedir="${pearDir}"/>
+    </target>
 </project>

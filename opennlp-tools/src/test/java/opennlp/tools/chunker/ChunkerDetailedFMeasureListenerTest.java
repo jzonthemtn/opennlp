@@ -23,10 +23,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
-import opennlp.common.chunker.Chunker;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.chunker.Chunker;
 import opennlp.tools.cmdline.chunker.ChunkerDetailedFMeasureListener;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.PlainTextByLineStream;

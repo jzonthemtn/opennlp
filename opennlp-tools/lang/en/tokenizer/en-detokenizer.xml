@@ -20,88 +20,88 @@ under the License.
 -->
 
 <dictionary>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>"</token>
-  </entry>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>'</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>?</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>!</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>,</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>;</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>:</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>(</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>)</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>}</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>{</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>]</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>[</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>``</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>''</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>%</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>n't</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'ve</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'d</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'ll</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'s</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'re</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>'m</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.org</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.com</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.net</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>#</token>
-  </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>"</token>
+    </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>'</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>?</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>!</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>,</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>;</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>:</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>(</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>)</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>}</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>{</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>]</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>[</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>``</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>''</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>%</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>n't</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'ve</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'d</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'ll</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'s</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'re</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>'m</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.org</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.com</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.net</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>#</token>
+    </entry>
 </dictionary>

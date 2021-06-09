@@ -34,21 +34,14 @@ import opennlp.tools.util.ObjectStream;
 
 public class LetsmtSentenceStreamFactory extends AbstractSampleStreamFactory<SentenceSample> {
 
-  interface Parameters extends BasicFormatParams {
-    @ArgumentParser.ParameterDescription(valueName = "dictionary",
-        description = "specifies the file with detokenizer dictionary.")
-    @ArgumentParser.OptionalParameter
-    File getDetokenizer();
+  protected <P> LetsmtSentenceStreamFactory(Class<P> params) {
+    super(params);
   }
 
   public static void registerFactory() {
     StreamFactoryRegistry.registerFactory(SentenceSample.class,
         "letsmt", new LetsmtSentenceStreamFactory(
-        LetsmtSentenceStreamFactory.Parameters.class));
-  }
-
-  protected <P> LetsmtSentenceStreamFactory(Class<P> params) {
-    super(params);
+            LetsmtSentenceStreamFactory.Parameters.class));
   }
 
   @Override
@@ -82,5 +75,12 @@ public class LetsmtSentenceStreamFactory extends AbstractSampleStreamFactory<Sen
     }
 
     return samples;
+  }
+
+  interface Parameters extends BasicFormatParams {
+    @ArgumentParser.ParameterDescription(valueName = "dictionary",
+        description = "specifies the file with detokenizer dictionary.")
+    @ArgumentParser.OptionalParameter
+    File getDetokenizer();
   }
 }

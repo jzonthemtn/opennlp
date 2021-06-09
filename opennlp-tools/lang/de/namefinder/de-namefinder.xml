@@ -19,22 +19,22 @@
 
 <!-- Default name finder feature generator configuration for German-->
 <generators>
-  <cache> 
-    <generators>
-      <window prevLength = "2" nextLength = "2">          
-        <tokenclass/>
-      </window>
-      <window prevLength = "2" nextLength = "2">                
-        <token/>
-      </window>
-      <definition/>
-      <prevmap/>
-      <bigram/>
-      <sentence begin="true" end="false"/>
-      <window prevLength = "1" nextLength = "0">                
-        <suffix/>
-      </window>
-      <prefix/>
-    </generators>
-  </cache> 
+    <cache>
+        <generators>
+            <window prevLength="2" nextLength="2">
+                <tokenclass/>
+            </window>
+            <window prevLength="2" nextLength="2">
+                <token/>
+            </window>
+            <definition/>
+            <prevmap/>
+            <bigram/>
+            <sentence begin="true" end="false"/>
+            <window prevLength="1" nextLength="0">
+                <suffix/>
+            </window>
+            <prefix/>
+        </generators>
+    </cache>
 </generators>

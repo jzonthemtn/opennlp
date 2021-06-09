@@ -45,7 +45,7 @@ public class POSToTokenSampleStream extends FilterObjectStream<POSSample, TokenS
 
     TokenSample tokenSample = null;
 
-    if (posSample != null ) {
+    if (posSample != null) {
       tokenSample = new TokenSample(detokenizer, posSample.getSentence());
     }
 

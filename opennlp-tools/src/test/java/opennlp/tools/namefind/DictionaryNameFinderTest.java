@@ -28,8 +28,8 @@ import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.tokenize.SimpleTokenizer;
 
 /**
-  *Tests for the {@link DictionaryNameFinder} class.
-  */
+ * Tests for the {@link DictionaryNameFinder} class.
+ */
 public class DictionaryNameFinderTest {
 
   private Dictionary mDictionary = new Dictionary();
@@ -37,13 +37,13 @@ public class DictionaryNameFinderTest {
 
   public DictionaryNameFinderTest() {
 
-    StringList vanessa = new StringList(new String[]{"Vanessa"});
+    StringList vanessa = new StringList(new String[] {"Vanessa"});
     mDictionary.put(vanessa);
 
     StringList vanessaWilliams = new StringList("Vanessa", "Williams");
     mDictionary.put(vanessaWilliams);
 
-    StringList max = new StringList(new String[]{"Max"});
+    StringList max = new StringList(new String[] {"Max"});
     mDictionary.put(max);
 
     StringList michaelJordan = new

@@ -20,13 +20,13 @@ package opennlp.uima.namefind;
 import java.io.IOException;
 import java.io.InputStream;
 
-import opennlp.common.namefind.TokenNameFinder;
 import org.apache.uima.cas.CAS;
 import org.apache.uima.resource.ResourceAccessException;
 import org.apache.uima.resource.ResourceInitializationException;
 
-import opennlp.tools.dictionary.Dictionary;
+import opennlp.common.namefind.TokenNameFinder;
 import opennlp.common.util.Span;
+import opennlp.tools.dictionary.Dictionary;
 import opennlp.uima.dictionary.DictionaryResource;
 import opennlp.uima.util.AnnotatorUtil;
 import opennlp.uima.util.ExceptionMessages;

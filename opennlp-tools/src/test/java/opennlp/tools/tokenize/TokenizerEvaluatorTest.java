@@ -20,13 +20,13 @@ package opennlp.tools.tokenize;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
-import opennlp.common.tokenize.Tokenizer;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.tokenize.Tokenizer;
+import opennlp.common.util.Span;
 import opennlp.tools.cmdline.tokenizer.TokenEvaluationErrorListener;
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.common.util.Span;
 
 public class TokenizerEvaluatorTest {
 

@@ -43,7 +43,7 @@ public class TokenSample implements Serializable {
   /**
    * Initializes the current instance.
    *
-   * @param text the text which contains the tokens.
+   * @param text       the text which contains the tokens.
    * @param tokenSpans the spans which mark the begin and end of the tokens.
    */
   public TokenSample(String text, Span[] tokenSpans) {
@@ -86,6 +86,65 @@ public class TokenSample implements Serializable {
 
     text = sentence.toString();
     tokenSpans = Collections.unmodifiableList(mergedTokenSpans);
+  }
+
+  private static void addToken(StringBuilder sample, List<Span> tokenSpans,
+                               String token, boolean isNextMerged) {
+
+    int tokenSpanStart = sample.length();
+    sample.append(token);
+    int tokenSpanEnd = sample.length();
+
+    tokenSpans.add(new Span(tokenSpanStart, tokenSpanEnd));
+
+    if (!isNextMerged)
+      sample.append(" ");
+  }
+
+  public static TokenSample parse(String sampleString, String separatorChars) {
+    Objects.requireNonNull(sampleString, "sampleString must not be null");
+    Objects.requireNonNull(separatorChars, "separatorChars must not be null");
+
+    Span[] whitespaceTokenSpans = WhitespaceTokenizer.INSTANCE.tokenizePos(sampleString);
+
+    // Pre-allocate 20% for newly created tokens
+    List<Span> realTokenSpans = new ArrayList<>((int) (whitespaceTokenSpans.length * 1.2d));
+
+    StringBuilder untaggedSampleString = new StringBuilder();
+
+    for (Span whiteSpaceTokenSpan : whitespaceTokenSpans) {
+      String whitespaceToken = whiteSpaceTokenSpan.getCoveredText(sampleString).toString();
+
+      boolean wasTokenReplaced = false;
+
+      int tokStart = 0;
+      int tokEnd;
+      while ((tokEnd = whitespaceToken.indexOf(separatorChars, tokStart)) > -1) {
+
+        String token = whitespaceToken.substring(tokStart, tokEnd);
+
+        addToken(untaggedSampleString, realTokenSpans, token, true);
+
+        tokStart = tokEnd + separatorChars.length();
+        wasTokenReplaced = true;
+      }
+
+      if (wasTokenReplaced) {
+        // If the token contains the split chars at least once
+        // a span for the last token must still be added
+        String token = whitespaceToken.substring(tokStart);
+
+        addToken(untaggedSampleString, realTokenSpans, token, false);
+      } else {
+        // If it does not contain the split chars at lest once
+        // just copy the original token span
+
+        addToken(untaggedSampleString, realTokenSpans, whitespaceToken, false);
+      }
+    }
+
+    return new TokenSample(untaggedSampleString.toString(), realTokenSpans.toArray(
+        new Span[realTokenSpans.size()]));
   }
 
   private boolean isMergeToRight(Detokenizer.DetokenizationOperation operation) {
@@ -141,66 +200,6 @@ public class TokenSample implements Serializable {
     }
 
     return sentence.toString();
-  }
-
-  private static void addToken(StringBuilder sample, List<Span> tokenSpans,
-      String token, boolean isNextMerged) {
-
-    int tokenSpanStart = sample.length();
-    sample.append(token);
-    int tokenSpanEnd = sample.length();
-
-    tokenSpans.add(new Span(tokenSpanStart, tokenSpanEnd));
-
-    if (!isNextMerged)
-        sample.append(" ");
-  }
-
-  public static TokenSample parse(String sampleString, String separatorChars) {
-    Objects.requireNonNull(sampleString, "sampleString must not be null");
-    Objects.requireNonNull(separatorChars, "separatorChars must not be null");
-
-    Span[] whitespaceTokenSpans = WhitespaceTokenizer.INSTANCE.tokenizePos(sampleString);
-
-    // Pre-allocate 20% for newly created tokens
-    List<Span> realTokenSpans = new ArrayList<>((int) (whitespaceTokenSpans.length * 1.2d));
-
-    StringBuilder untaggedSampleString = new StringBuilder();
-
-    for (Span whiteSpaceTokenSpan : whitespaceTokenSpans) {
-      String whitespaceToken = whiteSpaceTokenSpan.getCoveredText(sampleString).toString();
-
-      boolean wasTokenReplaced = false;
-
-      int tokStart = 0;
-      int tokEnd;
-      while ((tokEnd = whitespaceToken.indexOf(separatorChars, tokStart)) > -1) {
-
-        String token = whitespaceToken.substring(tokStart, tokEnd);
-
-        addToken(untaggedSampleString, realTokenSpans, token, true);
-
-        tokStart = tokEnd + separatorChars.length();
-        wasTokenReplaced = true;
-      }
-
-      if (wasTokenReplaced) {
-        // If the token contains the split chars at least once
-        // a span for the last token must still be added
-        String token = whitespaceToken.substring(tokStart);
-
-        addToken(untaggedSampleString, realTokenSpans, token, false);
-      }
-      else {
-        // If it does not contain the split chars at lest once
-        // just copy the original token span
-
-        addToken(untaggedSampleString, realTokenSpans, whitespaceToken, false);
-      }
-    }
-
-    return new TokenSample(untaggedSampleString.toString(), realTokenSpans.toArray(
-        new Span[realTokenSpans.size()]));
   }
 
   @Override

@@ -20,9 +20,9 @@
 -->
 
 <featureGenerators name="test">
-  <generator class="opennlp.tools.util.featuregen.AggregatedFeatureGeneratorFactory">
-    <generator class="opennlp.tools.util.featuregen.TokenClassFeatureGeneratorFactory">
-      <bool name="wordAndClass">true</bool>
+    <generator class="opennlp.tools.util.featuregen.AggregatedFeatureGeneratorFactory">
+        <generator class="opennlp.tools.util.featuregen.TokenClassFeatureGeneratorFactory">
+            <bool name="wordAndClass">true</bool>
+        </generator>
     </generator>
-  </generator>
 </featureGenerators>

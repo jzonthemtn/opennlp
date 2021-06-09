@@ -74,7 +74,7 @@ public class DummyChunker implements Chunker {
   }
 
   public Sequence[] topKSequences(String[] sentence, String[] tags,
-      double minSequenceScore) {
+                                  double minSequenceScore) {
     return null;
   }
 

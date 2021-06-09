@@ -56,8 +56,7 @@ public class MucNameSampleStream extends FilterObjectStream<String, NameSample> 
 
     if (storedSamples.size() > 0) {
       return storedSamples.remove(0);
-    }
-    else {
+    } else {
       return null;
     }
   }

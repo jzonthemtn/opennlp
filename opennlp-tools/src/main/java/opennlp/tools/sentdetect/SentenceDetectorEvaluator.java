@@ -43,7 +43,7 @@ public class SentenceDetectorEvaluator extends Evaluator<SentenceSample> {
    * Initializes the current instance.
    *
    * @param sentenceDetector
-   * @param listeners evaluation sample listeners
+   * @param listeners        evaluation sample listeners
    */
   public SentenceDetectorEvaluator(SentenceDetector sentenceDetector,
                                    SentenceDetectorEvaluationMonitor... listeners) {

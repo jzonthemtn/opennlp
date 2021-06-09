@@ -35,17 +35,14 @@ import opennlp.tools.util.PlainTextByLineStream;
 public class LanguageDetectorSampleStreamFactory
     extends AbstractSampleStreamFactory<LanguageSample> {
 
-  interface Parameters extends BasicFormatParams {
+  protected <P> LanguageDetectorSampleStreamFactory(Class<P> params) {
+    super(params);
   }
 
   public static void registerFactory() {
     StreamFactoryRegistry.registerFactory(LanguageSample.class,
-            StreamFactoryRegistry.DEFAULT_FORMAT,
-            new LanguageDetectorSampleStreamFactory(Parameters.class));
-  }
-
-  protected <P> LanguageDetectorSampleStreamFactory(Class<P> params) {
-    super(params);
+        StreamFactoryRegistry.DEFAULT_FORMAT,
+        new LanguageDetectorSampleStreamFactory(Parameters.class));
   }
 
   public ObjectStream<LanguageSample> create(String[] args) {
@@ -61,5 +58,8 @@ public class LanguageDetectorSampleStreamFactory
     }
 
     return new LanguageDetectorSampleStream(lineStream);
+  }
+
+  interface Parameters extends BasicFormatParams {
   }
 }

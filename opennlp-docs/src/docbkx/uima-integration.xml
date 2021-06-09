@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
-"http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[
-]>
+        "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd"[
+        ]>
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -22,29 +22,29 @@ under the License.
 -->
 
 <chapter id="org.apche.opennlp.uima">
-<title>UIMA Integration</title>
-<para>
-	The UIMA Integration wraps the OpenNLP components in UIMA Analysis Engines which can 
-	be used to automatically annotate text and train new OpenNLP models from annotated text.
-</para>
-	<section id="org.apche.opennlp.running-pear-sample">
-		<title>Running the pear sample in CVD</title>
-		<para>
-			The Cas Visual Debugger is shipped as part of the UIMA distribution and is a tool which can run
-			the OpenNLP UIMA Annotators and display their analysis results. The source distribution comes with a script
-			which can create a sample UIMA application. Which includes the sentence detector, tokenizer,
-			pos tagger, chunker and name finders for English. This sample application is packaged in the
-			pear format and must be installed with the pear installer before it can be run by CVD.
-			Please consult the UIMA documentation for further information about the pear installer.
-		</para>
-		<para>
-			The OpenNLP UIMA pear file must be build manually.
-			First download the source distribution, unzip it and go to the apache-opennlp/opennlp folder.
-			Type "mvn install" to build everything. Now build the pear file, go to apache-opennlp/opennlp-uima
-			and build it as shown below. Note the models will be downloaded
-			from the old SourceForge repository and are not licensed under the AL 2.0.
-			<screen>
-			<![CDATA[
+    <title>UIMA Integration</title>
+    <para>
+        The UIMA Integration wraps the OpenNLP components in UIMA Analysis Engines which can
+        be used to automatically annotate text and train new OpenNLP models from annotated text.
+    </para>
+    <section id="org.apche.opennlp.running-pear-sample">
+        <title>Running the pear sample in CVD</title>
+        <para>
+            The Cas Visual Debugger is shipped as part of the UIMA distribution and is a tool which can run
+            the OpenNLP UIMA Annotators and display their analysis results. The source distribution comes with a script
+            which can create a sample UIMA application. Which includes the sentence detector, tokenizer,
+            pos tagger, chunker and name finders for English. This sample application is packaged in the
+            pear format and must be installed with the pear installer before it can be run by CVD.
+            Please consult the UIMA documentation for further information about the pear installer.
+        </para>
+        <para>
+            The OpenNLP UIMA pear file must be build manually.
+            First download the source distribution, unzip it and go to the apache-opennlp/opennlp folder.
+            Type "mvn install" to build everything. Now build the pear file, go to apache-opennlp/opennlp-uima
+            and build it as shown below. Note the models will be downloaded
+            from the old SourceForge repository and are not licensed under the AL 2.0.
+            <screen>
+                <![CDATA[
 $ ant -f createPear.xml 
 Buildfile: createPear.xml
 
@@ -81,27 +81,28 @@ createPear:
 
 BUILD SUCCESSFUL
 Total time: 3 minutes 20 seconds]]>
-		 </screen>
-		</para>
-		<para>
-			After the pear is installed start the Cas Visual Debugger shipped with the UIMA framework.
-			And click on Tools -> Load AE. Then select the opennlp.uima.OpenNlpTextAnalyzer_pear.xml
-			file in the file dialog. Now enter some text and start the analysis engine with
-			"Run -> Run OpenNLPTextAnalyzer". Afterwards the results will be displayed.
-			You should see sentences, tokens, chunks, pos tags and maybe some names. Remember the input text
-			must be written in English.
-		</para>
-	</section>
-	<section id="org.apche.opennlp.further-help">
-		<title>Further Help</title>
-		<para>
-			For more information about how to use the integration please consult the javadoc of the individual
-			Analysis Engines and checkout the included xml descriptors.
-		</para>
-		<para>
-			TODO: Extend this documentation with information about the individual components.
-			If you want to contribute please contact us on the mailing list
-			or comment on the jira issue <ulink url="https://issues.apache.org/jira/browse/OPENNLP-49">OPENNLP-49</ulink>.
-		</para>
-	</section>
+            </screen>
+        </para>
+        <para>
+            After the pear is installed start the Cas Visual Debugger shipped with the UIMA framework.
+            And click on Tools -> Load AE. Then select the opennlp.uima.OpenNlpTextAnalyzer_pear.xml
+            file in the file dialog. Now enter some text and start the analysis engine with
+            "Run -> Run OpenNLPTextAnalyzer". Afterwards the results will be displayed.
+            You should see sentences, tokens, chunks, pos tags and maybe some names. Remember the input text
+            must be written in English.
+        </para>
+    </section>
+    <section id="org.apche.opennlp.further-help">
+        <title>Further Help</title>
+        <para>
+            For more information about how to use the integration please consult the javadoc of the individual
+            Analysis Engines and checkout the included xml descriptors.
+        </para>
+        <para>
+            TODO: Extend this documentation with information about the individual components.
+            If you want to contribute please contact us on the mailing list
+            or comment on the jira issue <ulink url="https://issues.apache.org/jira/browse/OPENNLP-49">
+            OPENNLP-49</ulink>.
+        </para>
+    </section>
 </chapter>

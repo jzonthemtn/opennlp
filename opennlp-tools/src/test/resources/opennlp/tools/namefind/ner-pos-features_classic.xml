@@ -16,21 +16,21 @@
   -->
 
 <generators>
-  <cache>
-    <generators>
-      <window prevLength = "2" nextLength = "2">
-        <tokenclass/>
-      </window>
-      <window prevLength = "2" nextLength = "2">
-        <token/>
-      </window>
-      <window prevLength = "2" nextLength = "2">
-        <tokenpos model="pos-model.bin"/>
-      </window>
-      <definition/>
-      <prevmap/>
-      <bigram/>
-      <sentence begin="true" end="false"/>
-    </generators>
-  </cache>
+    <cache>
+        <generators>
+            <window prevLength="2" nextLength="2">
+                <tokenclass/>
+            </window>
+            <window prevLength="2" nextLength="2">
+                <token/>
+            </window>
+            <window prevLength="2" nextLength="2">
+                <tokenpos model="pos-model.bin"/>
+            </window>
+            <definition/>
+            <prevmap/>
+            <bigram/>
+            <sentence begin="true" end="false"/>
+        </generators>
+    </cache>
 </generators>

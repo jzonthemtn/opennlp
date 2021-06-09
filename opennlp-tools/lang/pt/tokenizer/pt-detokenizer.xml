@@ -20,76 +20,76 @@ under the License.
 -->
 
 <dictionary>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>"</token>
-  </entry>
-  <entry operation="RIGHT_LEFT_MATCHING">
-    <token>'</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>?</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>!</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>,</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>;</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>:</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>(</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>)</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>}</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>{</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>]</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>[</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>»</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>«</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>``</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>''</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>%</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.org</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.com</token>
-  </entry>
-  <entry operation="MOVE_LEFT">
-    <token>.net</token>
-  </entry>
-  <entry operation="MOVE_RIGHT">
-    <token>#</token>
-  </entry>
-  <entry operation="MOVE_BOTH">
-    <token>-</token>
-  </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>"</token>
+    </entry>
+    <entry operation="RIGHT_LEFT_MATCHING">
+        <token>'</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>?</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>!</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>,</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>;</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>:</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>(</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>)</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>}</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>{</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>]</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>[</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>»</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>«</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>``</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>''</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>%</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.org</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.com</token>
+    </entry>
+    <entry operation="MOVE_LEFT">
+        <token>.net</token>
+    </entry>
+    <entry operation="MOVE_RIGHT">
+        <token>#</token>
+    </entry>
+    <entry operation="MOVE_BOTH">
+        <token>-</token>
+    </entry>
 </dictionary>

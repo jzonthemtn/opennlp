@@ -21,20 +21,20 @@
 #        may be inadvertantly placed in any output files if
 #        output redirection is used.
 
-if [ -z "$JAVACMD" ] ; then
-  if [ -n "$JAVA_HOME"  ] ; then
+if [ -z "$JAVACMD" ]; then
+  if [ -n "$JAVA_HOME" ]; then
     JAVACMD="$JAVA_HOME/bin/java"
   else
-    JAVACMD="`which java`"
+    JAVACMD="$(which java)"
   fi
 fi
 
 unset HEAP
-if [ -n "$JAVA_HEAP" ] ; then
+if [ -n "$JAVA_HEAP" ]; then
   HEAP="-Xmx$JAVA_HEAP"
 fi
 
 # Might fail if $0 is a link
-OPENNLP_HOME=`dirname "$0"`/..
+OPENNLP_HOME=$(dirname "$0")/..
 
 $JAVACMD $HEAP -cp $(echo $OPENNLP_HOME/lib/*.jar | tr ' ' ':') opennlp.tools.cmdline.CLI $@

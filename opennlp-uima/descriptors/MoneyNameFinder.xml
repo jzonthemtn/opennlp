@@ -20,85 +20,85 @@
 -->
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
-	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-	<primitive>true</primitive>
-	<annotatorImplementationName>opennlp.uima.namefind.NameFinder</annotatorImplementationName>
-	<analysisEngineMetaData>
-		<name>Money Name Finder</name>
-		<description></description>
-		<version>${project.version}</version>
-		<vendor>Apache Software Foundation</vendor>
-		<configurationParameters>
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>opennlp.uima.namefind.NameFinder</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>Money Name Finder</name>
+        <description></description>
+        <version>${project.version}</version>
+        <vendor>Apache Software Foundation</vendor>
+        <configurationParameters>
 
-			<configurationParameter>
-				<name>opennlp.uima.SentenceType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
+            <configurationParameter>
+                <name>opennlp.uima.SentenceType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
 
-			<configurationParameter>
-				<name>opennlp.uima.TokenType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
+            <configurationParameter>
+                <name>opennlp.uima.TokenType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
 
-			<configurationParameter>
-				<name>opennlp.uima.NameType</name>
-				<type>String</type>
-				<multiValued>false</multiValued>
-				<mandatory>true</mandatory>
-			</configurationParameter>
-		</configurationParameters>
+            <configurationParameter>
+                <name>opennlp.uima.NameType</name>
+                <type>String</type>
+                <multiValued>false</multiValued>
+                <mandatory>true</mandatory>
+            </configurationParameter>
+        </configurationParameters>
 
-		<configurationParameterSettings>
+        <configurationParameterSettings>
 
-			<nameValuePair>
-				<name>opennlp.uima.SentenceType</name>
-				<value>
-					<string>uima.tcas.DocumentAnnotation</string>
-				</value>
-			</nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.SentenceType</name>
+                <value>
+                    <string>uima.tcas.DocumentAnnotation</string>
+                </value>
+            </nameValuePair>
 
-			<nameValuePair>
-				<name>opennlp.uima.TokenType</name>
-				<value>
-					<string>opennlp.uima.Token</string>
-				</value>
-			</nameValuePair>
+            <nameValuePair>
+                <name>opennlp.uima.TokenType</name>
+                <value>
+                    <string>opennlp.uima.Token</string>
+                </value>
+            </nameValuePair>
 
-			<nameValuePair>
-				<name>opennlp.uima.NameType</name>
-				<value>
-					<string>opennlp.uima.Money</string>
-				</value>
-			</nameValuePair>
-		</configurationParameterSettings>
+            <nameValuePair>
+                <name>opennlp.uima.NameType</name>
+                <value>
+                    <string>opennlp.uima.Money</string>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
 
-		<typeSystemDescription>
-			<imports>
-				<import location="TypeSystem.xml" />
-			</imports>
-		</typeSystemDescription>
+        <typeSystemDescription>
+            <imports>
+                <import location="TypeSystem.xml"/>
+            </imports>
+        </typeSystemDescription>
 
-		<capabilities>
-			<capability>
-				<inputs />
-				<outputs />
-				<languagesSupported>
-					<language>en</language>
-				</languagesSupported>
-			</capability>
-		</capabilities>
-	</analysisEngineMetaData>
-	
-	<externalResourceDependencies>
-		<externalResourceDependency>
-			<key>opennlp.uima.ModelName</key>
-			<interfaceName>opennlp.uima.namefind.TokenNameFinderModelResource</interfaceName>
-		</externalResourceDependency>
-	</externalResourceDependencies>
-	
-	<resourceManagerConfiguration/>
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs/>
+                <languagesSupported>
+                    <language>en</language>
+                </languagesSupported>
+            </capability>
+        </capabilities>
+    </analysisEngineMetaData>
+
+    <externalResourceDependencies>
+        <externalResourceDependency>
+            <key>opennlp.uima.ModelName</key>
+            <interfaceName>opennlp.uima.namefind.TokenNameFinderModelResource</interfaceName>
+        </externalResourceDependency>
+    </externalResourceDependencies>
+
+    <resourceManagerConfiguration/>
 </analysisEngineDescription>

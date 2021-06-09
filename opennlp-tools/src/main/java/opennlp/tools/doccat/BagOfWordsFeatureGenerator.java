@@ -52,8 +52,7 @@ public class BagOfWordsFeatureGenerator implements FeatureGenerator {
 
         if (pattern.isAllLetter())
           bagOfWords.add("bow=" + word);
-      }
-      else {
+      } else {
         bagOfWords.add("bow=" + word);
       }
     }

@@ -43,7 +43,7 @@ public class NameToTokenSampleStream extends FilterObjectStream<NameSample, Toke
 
     TokenSample tokenSample = null;
 
-    if (nameSample != null ) {
+    if (nameSample != null) {
       tokenSample = new TokenSample(detokenizer, nameSample.getSentence());
     }
 

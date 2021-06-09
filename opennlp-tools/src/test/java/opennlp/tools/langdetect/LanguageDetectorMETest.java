@@ -35,6 +35,41 @@ public class LanguageDetectorMETest {
 
   private LanguageDetectorModel model;
 
+  protected static byte[] serializeModel(LanguageDetectorModel model) throws IOException {
+
+    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    model.serialize(out);
+    return out.toByteArray();
+  }
+
+  public static LanguageDetectorModel trainModel() throws Exception {
+    return trainModel(new LanguageDetectorFactory());
+  }
+
+  public static LanguageDetectorModel trainModel(LanguageDetectorFactory factory) throws Exception {
+
+
+    LanguageDetectorSampleStream sampleStream = createSampleStream();
+
+    TrainingParameters params = new TrainingParameters();
+    params.put(TrainingParameters.ITERATIONS_PARAM, 100);
+    params.put(TrainingParameters.CUTOFF_PARAM, 5);
+    params.put("DataIndexer", "TwoPass");
+    params.put(TrainingParameters.ALGORITHM_PARAM, "NAIVEBAYES");
+
+    return LanguageDetectorME.train(sampleStream, params, factory);
+  }
+
+  public static LanguageDetectorSampleStream createSampleStream() throws IOException {
+
+    ResourceAsStreamFactory streamFactory = new ResourceAsStreamFactory(
+        LanguageDetectorMETest.class, "/opennlp/tools/doccat/DoccatSample.txt");
+
+    PlainTextByLineStream lineStream = new PlainTextByLineStream(streamFactory, StandardCharsets.UTF_8);
+
+    return new LanguageDetectorSampleStream(lineStream);
+  }
+
   @Before
   public void init() throws Exception {
 
@@ -98,40 +133,5 @@ public class LanguageDetectorMETest {
 
     Assert.assertNotNull(myModel);
 
-  }
-
-  protected static byte[] serializeModel(LanguageDetectorModel model) throws IOException {
-
-    ByteArrayOutputStream out = new ByteArrayOutputStream();
-    model.serialize(out);
-    return out.toByteArray();
-  }
-
-  public static LanguageDetectorModel trainModel() throws Exception {
-    return trainModel(new LanguageDetectorFactory());
-  }
-
-  public static LanguageDetectorModel trainModel(LanguageDetectorFactory factory) throws Exception {
-
-
-    LanguageDetectorSampleStream sampleStream = createSampleStream();
-
-    TrainingParameters params = new TrainingParameters();
-    params.put(TrainingParameters.ITERATIONS_PARAM, 100);
-    params.put(TrainingParameters.CUTOFF_PARAM, 5);
-    params.put("DataIndexer", "TwoPass");
-    params.put(TrainingParameters.ALGORITHM_PARAM, "NAIVEBAYES");
-
-    return LanguageDetectorME.train(sampleStream, params, factory);
-  }
-
-  public static LanguageDetectorSampleStream createSampleStream() throws IOException {
-
-    ResourceAsStreamFactory streamFactory = new ResourceAsStreamFactory(
-        LanguageDetectorMETest.class, "/opennlp/tools/doccat/DoccatSample.txt");
-
-    PlainTextByLineStream lineStream = new PlainTextByLineStream(streamFactory, StandardCharsets.UTF_8);
-
-    return new LanguageDetectorSampleStream(lineStream);
   }
 }
