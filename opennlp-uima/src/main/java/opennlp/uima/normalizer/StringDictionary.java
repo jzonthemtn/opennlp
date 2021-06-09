@@ -27,7 +27,7 @@ import java.util.Map;
 import opennlp.tools.dictionary.serializer.Attributes;
 import opennlp.tools.dictionary.serializer.DictionaryEntryPersistor;
 import opennlp.tools.dictionary.serializer.Entry;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 // lookup a string for given token list
 public class StringDictionary {

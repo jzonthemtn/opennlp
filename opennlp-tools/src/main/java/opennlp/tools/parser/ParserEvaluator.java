@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Stack;
 
 import opennlp.tools.cmdline.parser.ParserTool;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.FMeasure;
 

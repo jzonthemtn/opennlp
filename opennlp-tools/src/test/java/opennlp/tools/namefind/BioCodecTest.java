@@ -24,7 +24,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This is the test class for {@link BioCodec}.

@@ -18,7 +18,7 @@
 
 package opennlp.tools.sentdetect;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * The interface for sentence detectors, which find the sentence boundaries in

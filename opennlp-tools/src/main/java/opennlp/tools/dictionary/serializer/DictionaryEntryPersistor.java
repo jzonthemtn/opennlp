@@ -41,7 +41,7 @@ import org.xml.sax.helpers.AttributesImpl;
 import org.xml.sax.helpers.XMLReaderFactory;
 
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 import opennlp.tools.util.model.UncloseableInputStream;
 
 /**

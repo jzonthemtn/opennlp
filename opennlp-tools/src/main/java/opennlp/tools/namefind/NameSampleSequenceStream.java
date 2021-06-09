@@ -20,6 +20,7 @@ package opennlp.tools.namefind;
 import java.io.IOException;
 import java.util.Collections;
 
+import opennlp.common.namefind.TokenNameFinder;
 import opennlp.tools.ml.model.AbstractModel;
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.ml.model.Sequence;

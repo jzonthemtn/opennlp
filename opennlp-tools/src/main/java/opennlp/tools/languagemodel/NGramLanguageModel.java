@@ -22,7 +22,7 @@ import java.io.InputStream;
 
 import opennlp.tools.ngram.NGramModel;
 import opennlp.tools.ngram.NGramUtils;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * A {@link opennlp.tools.languagemodel.LanguageModel} based on a {@link opennlp.tools.ngram.NGramModel}

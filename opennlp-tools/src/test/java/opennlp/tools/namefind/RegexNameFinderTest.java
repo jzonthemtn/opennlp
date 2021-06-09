@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
 import org.junit.Assert;
 import org.junit.Test;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Tests for the {@link RegexNameFinder} class.

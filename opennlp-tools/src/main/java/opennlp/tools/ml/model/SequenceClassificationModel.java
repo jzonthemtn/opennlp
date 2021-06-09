@@ -18,7 +18,7 @@
 package opennlp.tools.ml.model;
 
 import opennlp.tools.util.BeamSearchContextGenerator;
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 import opennlp.tools.util.SequenceValidator;
 
 /**

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package opennlp.tools.entitylinker;
+package opennlp.common.entitylinker;
 
 import java.io.File;
 import java.io.FileInputStream;

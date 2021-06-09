@@ -78,9 +78,9 @@ public class ParserModel extends BaseModel {
   private static final String PARSER_TYPE = "parser-type";
 
   public ParserModel(String languageCode, MaxentModel buildModel, MaxentModel checkModel,
-      MaxentModel attachModel, POSModel parserTagger,
-      ChunkerModel chunkerTagger, opennlp.tools.parser.HeadRules headRules,
-      ParserType modelType, Map<String, String> manifestInfoEntries) {
+                     MaxentModel attachModel, POSModel parserTagger,
+                     ChunkerModel chunkerTagger, opennlp.tools.parser.HeadRules headRules,
+                     ParserType modelType, Map<String, String> manifestInfoEntries) {
 
     super(COMPONENT_NAME, languageCode, manifestInfoEntries);
 

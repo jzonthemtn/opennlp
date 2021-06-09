@@ -26,7 +26,7 @@ import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class ConlluSentenceSampleStreamTest {
 

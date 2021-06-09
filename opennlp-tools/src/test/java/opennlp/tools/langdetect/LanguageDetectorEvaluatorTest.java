@@ -21,6 +21,7 @@ import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import opennlp.common.langdetect.Language;
 import org.junit.Assert;
 import org.junit.Test;
 

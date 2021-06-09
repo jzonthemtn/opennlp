@@ -21,8 +21,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import opennlp.tools.util.Sequence;
-import opennlp.tools.util.Span;
+import opennlp.common.chunker.Chunker;
+import opennlp.common.util.Sequence;
+import opennlp.common.util.Span;
 
 /**
  * This dummy chunker implementation reads a file formatted as described at

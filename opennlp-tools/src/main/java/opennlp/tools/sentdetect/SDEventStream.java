@@ -24,7 +24,7 @@ import java.util.Iterator;
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.util.AbstractEventStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class SDEventStream extends AbstractEventStream<SentenceSample> {
 

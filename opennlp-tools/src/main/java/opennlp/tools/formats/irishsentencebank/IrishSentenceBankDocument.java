@@ -37,7 +37,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import opennlp.tools.tokenize.TokenSample;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.XmlUtil;
 
 /**

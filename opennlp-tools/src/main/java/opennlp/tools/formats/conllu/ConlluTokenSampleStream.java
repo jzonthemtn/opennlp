@@ -22,7 +22,7 @@ import java.io.IOException;
 import opennlp.tools.tokenize.TokenSample;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 public class ConlluTokenSampleStream extends FilterObjectStream<ConlluSentence, TokenSample> {
 

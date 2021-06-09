@@ -25,17 +25,14 @@ import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.List;
 
+import opennlp.common.doccat.FeatureGenerator;
 import opennlp.tools.cmdline.AbstractCrossValidatorTool;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.TerminateToolException;
 import opennlp.tools.cmdline.doccat.DoccatCrossValidatorTool.CVToolParams;
 import opennlp.tools.cmdline.params.CVParams;
 import opennlp.tools.cmdline.params.FineGrainedEvaluatorParams;
-import opennlp.tools.doccat.DoccatCrossValidator;
-import opennlp.tools.doccat.DoccatEvaluationMonitor;
-import opennlp.tools.doccat.DoccatFactory;
-import opennlp.tools.doccat.DocumentSample;
-import opennlp.tools.doccat.FeatureGenerator;
+import opennlp.tools.doccat.*;
 import opennlp.tools.util.eval.EvaluationMonitor;
 import opennlp.tools.util.model.ModelUtil;
 

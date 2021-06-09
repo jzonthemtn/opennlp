@@ -26,6 +26,8 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+import opennlp.common.doccat.DocumentCategorizer;
+import opennlp.common.doccat.FeatureGenerator;
 import opennlp.tools.ml.EventTrainer;
 import opennlp.tools.ml.TrainerFactory;
 import opennlp.tools.ml.model.MaxentModel;

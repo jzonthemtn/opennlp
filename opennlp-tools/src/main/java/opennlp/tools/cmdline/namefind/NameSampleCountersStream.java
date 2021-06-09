@@ -25,7 +25,7 @@ import java.util.Map;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Counts tokens, sentences and names by type

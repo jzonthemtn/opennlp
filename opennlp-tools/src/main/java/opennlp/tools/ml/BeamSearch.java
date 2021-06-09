@@ -26,7 +26,7 @@ import opennlp.tools.ml.model.MaxentModel;
 import opennlp.tools.ml.model.SequenceClassificationModel;
 import opennlp.tools.util.BeamSearchContextGenerator;
 import opennlp.tools.util.Cache;
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 import opennlp.tools.util.SequenceValidator;
 
 /**

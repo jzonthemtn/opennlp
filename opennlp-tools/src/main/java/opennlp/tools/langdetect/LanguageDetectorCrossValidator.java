@@ -19,7 +19,6 @@ package opennlp.tools.langdetect;
 
 import java.io.IOException;
 
-import opennlp.tools.doccat.FeatureGenerator;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.TrainingParameters;
 import opennlp.tools.util.eval.CrossValidationPartitioner;

@@ -20,8 +20,8 @@ package opennlp.tools.formats.convert;
 import java.io.IOException;
 import java.util.Objects;
 
+import opennlp.common.tokenize.Detokenizer;
 import opennlp.tools.postag.POSSample;
-import opennlp.tools.tokenize.Detokenizer;
 import opennlp.tools.tokenize.TokenSample;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;

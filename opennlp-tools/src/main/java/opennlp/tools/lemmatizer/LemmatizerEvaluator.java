@@ -17,6 +17,7 @@
 
 package opennlp.tools.lemmatizer;
 
+import opennlp.common.lemmatizer.Lemmatizer;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.Mean;
 

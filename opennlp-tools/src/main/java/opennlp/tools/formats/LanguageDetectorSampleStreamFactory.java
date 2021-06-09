@@ -23,7 +23,6 @@ import opennlp.tools.cmdline.ArgumentParser;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.StreamFactoryRegistry;
 import opennlp.tools.cmdline.params.BasicFormatParams;
-import opennlp.tools.doccat.DocumentSampleStream;
 import opennlp.tools.langdetect.LanguageDetectorSampleStream;
 import opennlp.tools.langdetect.LanguageSample;
 import opennlp.tools.util.InputStreamFactory;

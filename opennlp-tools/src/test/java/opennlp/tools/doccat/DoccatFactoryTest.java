@@ -22,6 +22,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+import opennlp.common.doccat.FeatureGenerator;
 import org.junit.Assert;
 import org.junit.Test;
 

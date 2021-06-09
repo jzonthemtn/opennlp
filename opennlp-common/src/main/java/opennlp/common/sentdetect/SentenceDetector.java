@@ -15,19 +15,32 @@
  * limitations under the License.
  */
 
-package opennlp.tools.langdetect;
+package opennlp.common.sentdetect;
 
-import java.io.Serializable;
+import opennlp.common.util.Span;
 
 /**
- * The interface for LanguageDetector which provide the @{@link Language} according to the context.
+ * The interface for sentence detectors, which find the sentence boundaries in
+ * a text.
  */
-public interface LanguageDetector extends Serializable {
+public interface SentenceDetector {
 
-  Language[] predictLanguages(CharSequence content);
+    /**
+     * Sentence detect a string.
+     *
+     * @param s The string to be sentence detected.
+     * @return  The String[] with the individual sentences as the array
+     *          elements.
+     */
+    String[] sentDetect(String s);
 
-  Language predictLanguage(CharSequence content);
-
-  String[] getSupportedLanguages();
-
+    /**
+     * Sentence detect a string.
+     *
+     * @param s The string to be sentence detected.
+     *
+     * @return The Span[] with the spans (offsets into s) for each
+     * detected sentence as the individuals array elements.
+     */
+    Span[] sentPosDetect(String s);
 }

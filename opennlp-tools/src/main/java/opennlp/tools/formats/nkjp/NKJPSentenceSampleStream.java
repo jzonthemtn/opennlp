@@ -25,7 +25,7 @@ import java.util.Map;
 
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class NKJPSentenceSampleStream implements ObjectStream<SentenceSample> {
   private final NKJPSegmentationDocument segments;

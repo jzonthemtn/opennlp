@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package opennlp.tools.util;
+package opennlp.common.util;
 
 public class StringUtil {
 

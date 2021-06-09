@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import opennlp.tools.cmdline.postag.POSEvaluationErrorListener;
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 
 public class POSEvaluatorTest {
 

@@ -35,6 +35,12 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.apache.opennlp</groupId>
+      <artifactId>opennlp-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>org.osgi.core</artifactId>
       <version>${osgi.version}</version>

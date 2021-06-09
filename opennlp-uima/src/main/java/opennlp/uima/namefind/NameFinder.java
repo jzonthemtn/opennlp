@@ -30,7 +30,7 @@ import org.apache.uima.resource.ResourceInitializationException;
 
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.eval.Mean;
 import opennlp.uima.util.AnnotatorUtil;
 import opennlp.uima.util.UimaUtil;

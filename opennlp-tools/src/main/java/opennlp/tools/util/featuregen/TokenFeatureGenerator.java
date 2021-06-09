@@ -20,7 +20,7 @@ package opennlp.tools.util.featuregen;
 
 import java.util.List;
 
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 /**
  * Generates a feature which contains the token itself.

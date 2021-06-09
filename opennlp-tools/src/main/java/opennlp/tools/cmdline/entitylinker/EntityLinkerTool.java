@@ -22,19 +22,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import opennlp.common.entitylinker.EntityLinker;
 import opennlp.tools.cmdline.BasicCmdLineTool;
 import opennlp.tools.cmdline.CLI;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.PerformanceMonitor;
 import opennlp.tools.cmdline.SystemInputStreamFactory;
 import opennlp.tools.cmdline.TerminateToolException;
-import opennlp.tools.entitylinker.EntityLinker;
 import opennlp.tools.entitylinker.EntityLinkerFactory;
-import opennlp.tools.entitylinker.EntityLinkerProperties;
+import opennlp.common.entitylinker.EntityLinkerProperties;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class EntityLinkerTool extends BasicCmdLineTool {
 

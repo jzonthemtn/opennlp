@@ -20,16 +20,12 @@ package opennlp.tools.cmdline.doccat;
 import java.io.File;
 import java.io.IOException;
 
+import opennlp.common.doccat.FeatureGenerator;
 import opennlp.tools.cmdline.AbstractTrainerTool;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.doccat.DoccatTrainerTool.TrainerToolParams;
 import opennlp.tools.cmdline.params.TrainingToolParams;
-import opennlp.tools.doccat.BagOfWordsFeatureGenerator;
-import opennlp.tools.doccat.DoccatFactory;
-import opennlp.tools.doccat.DoccatModel;
-import opennlp.tools.doccat.DocumentCategorizerME;
-import opennlp.tools.doccat.DocumentSample;
-import opennlp.tools.doccat.FeatureGenerator;
+import opennlp.tools.doccat.*;
 import opennlp.tools.util.ext.ExtensionLoader;
 import opennlp.tools.util.model.ModelUtil;
 

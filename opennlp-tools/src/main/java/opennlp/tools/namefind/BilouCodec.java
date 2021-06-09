@@ -25,7 +25,7 @@ import java.util.Set;
 
 import opennlp.tools.util.SequenceCodec;
 import opennlp.tools.util.SequenceValidator;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class BilouCodec implements SequenceCodec<String> {
 

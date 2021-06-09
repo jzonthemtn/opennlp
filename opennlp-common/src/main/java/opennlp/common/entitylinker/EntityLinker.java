@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package opennlp.tools.entitylinker;
+package opennlp.common.entitylinker;
+
+import opennlp.common.util.Span;
 
 import java.io.IOException;
 import java.util.List;
-
-import opennlp.tools.util.Span;
 
 /**
  * EntityLinkers establish connections to external data to enrich extracted

@@ -20,6 +20,7 @@ package opennlp.tools.tokenize;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
+import opennlp.common.tokenize.Detokenizer;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -70,7 +71,7 @@ public class DetokenizerEvaluatorTest {
       this.sample = sample;
     }
 
-    public DetokenizationOperation[] detokenize(String[] tokens) {
+    public Detokenizer.DetokenizationOperation[] detokenize(String[] tokens) {
       return null;
     }
 

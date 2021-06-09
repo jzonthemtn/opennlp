@@ -33,7 +33,7 @@ import opennlp.tools.util.MockInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

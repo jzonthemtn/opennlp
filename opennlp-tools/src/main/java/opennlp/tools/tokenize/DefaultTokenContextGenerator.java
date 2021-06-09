@@ -22,7 +22,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 /**
  * Generate events for maxent decisions for tokenization.

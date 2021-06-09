@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package opennlp.tools.chunker;
+package opennlp.common.chunker;
 
-import opennlp.tools.util.Sequence;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Sequence;
+import opennlp.common.util.Span;
 
 /**
  * The interface for chunkers which provide chunk tags for a sequence of tokens.

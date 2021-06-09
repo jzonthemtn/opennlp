@@ -19,10 +19,10 @@ package opennlp.tools.cmdline.tokenizer;
 
 import java.io.IOException;
 
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.PerformanceMonitor;
 import opennlp.tools.cmdline.SystemInputStreamFactory;
-import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerStream;
 import opennlp.tools.tokenize.WhitespaceTokenStream;
 import opennlp.tools.util.ObjectStream;

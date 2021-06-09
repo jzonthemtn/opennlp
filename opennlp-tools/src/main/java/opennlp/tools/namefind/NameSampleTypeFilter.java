@@ -27,7 +27,7 @@ import java.util.Set;
 
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * A stream which removes Name Samples which do not have a certain type.

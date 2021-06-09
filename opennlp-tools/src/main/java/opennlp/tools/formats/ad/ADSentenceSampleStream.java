@@ -32,7 +32,7 @@ import opennlp.tools.sentdetect.lang.Factory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * <b>Note:</b> Do not use this class, internal use only!

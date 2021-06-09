@@ -30,7 +30,7 @@ import java.util.Map;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.InvalidFormatException;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Reads the annotations from the brat .ann annotation file.

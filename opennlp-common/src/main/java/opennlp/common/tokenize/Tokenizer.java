@@ -16,9 +16,9 @@
  */
 
 
-package opennlp.tools.tokenize;
+package opennlp.common.tokenize;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * The interface for tokenizers, which segment a string into its tokens.

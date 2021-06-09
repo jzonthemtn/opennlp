@@ -18,6 +18,7 @@
 
 package opennlp.tools.chunker;
 
+import opennlp.common.chunker.Chunker;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.FMeasure;
 

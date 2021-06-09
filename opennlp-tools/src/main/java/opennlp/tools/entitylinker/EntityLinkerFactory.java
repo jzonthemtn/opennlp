@@ -20,6 +20,8 @@ package opennlp.tools.entitylinker;
 import java.io.IOException;
 import java.util.Objects;
 
+import opennlp.common.entitylinker.EntityLinker;
+import opennlp.common.entitylinker.EntityLinkerProperties;
 import opennlp.tools.util.ext.ExtensionLoader;
 
 /**

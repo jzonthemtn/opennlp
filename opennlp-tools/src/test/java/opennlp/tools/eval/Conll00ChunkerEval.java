@@ -22,18 +22,13 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 
+import opennlp.tools.chunker.*;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
 import opennlp.tools.HighMemoryUsage;
-import opennlp.tools.chunker.ChunkSample;
-import opennlp.tools.chunker.ChunkSampleStream;
-import opennlp.tools.chunker.ChunkerEvaluator;
-import opennlp.tools.chunker.ChunkerFactory;
-import opennlp.tools.chunker.ChunkerME;
-import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.util.MarkableFileInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;

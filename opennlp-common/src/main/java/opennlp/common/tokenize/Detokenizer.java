@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package opennlp.tools.tokenize;
+package opennlp.common.tokenize;
 
 /**
  * A Detokenizer merges tokens back to their untokenized representation.

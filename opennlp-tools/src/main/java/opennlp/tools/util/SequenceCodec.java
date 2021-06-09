@@ -17,6 +17,8 @@
 
 package opennlp.tools.util;
 
+import opennlp.common.util.Span;
+
 import java.util.List;
 
 public interface SequenceCodec<T> {

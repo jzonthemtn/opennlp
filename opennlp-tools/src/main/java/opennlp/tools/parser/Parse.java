@@ -30,7 +30,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Data structure for holding parse constituents.

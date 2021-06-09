@@ -30,7 +30,7 @@ import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 
 /**
- * Factory producing OpenNLP {@link DocumentSampleStream}s.
+ * Factory producing OpenNLP {@link DocumentSample} streams.
  */
 public class DocumentSampleStreamFactory extends AbstractSampleStreamFactory<DocumentSample> {
 

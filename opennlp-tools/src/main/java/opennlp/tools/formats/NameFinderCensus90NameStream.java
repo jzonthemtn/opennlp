@@ -24,8 +24,8 @@ import java.util.Locale;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.StringList;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringList;
+import opennlp.common.util.StringUtil;
 
 /**
  * This class helps to read the US Census data from the files to build a

@@ -22,7 +22,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 /**
  * The {@link NGramCharModel} can be used to create character ngrams.

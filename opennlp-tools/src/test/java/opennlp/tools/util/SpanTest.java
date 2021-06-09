@@ -17,6 +17,7 @@
 
 package opennlp.tools.util;
 
+import opennlp.common.util.Span;
 import org.junit.Assert;
 import org.junit.Test;
 

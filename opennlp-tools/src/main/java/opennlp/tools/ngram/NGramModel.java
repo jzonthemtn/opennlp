@@ -30,8 +30,8 @@ import opennlp.tools.dictionary.serializer.Attributes;
 import opennlp.tools.dictionary.serializer.DictionaryEntryPersistor;
 import opennlp.tools.dictionary.serializer.Entry;
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.StringList;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringList;
+import opennlp.common.util.StringUtil;
 
 /**
  * The {@link NGramModel} can be used to crate ngrams and character ngrams.

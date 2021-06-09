@@ -25,7 +25,7 @@ import org.junit.Test;
 
 import opennlp.tools.ml.model.MaxentModel;
 import opennlp.tools.util.BeamSearchContextGenerator;
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 
 public class BeamSearchTest {
 

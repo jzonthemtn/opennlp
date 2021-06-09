@@ -18,7 +18,7 @@
 
 package opennlp.tools.parser;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Class used to hold constituents when reading parses.

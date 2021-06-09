@@ -17,6 +17,8 @@
 
 package opennlp.tools.doccat;
 
+import opennlp.common.doccat.FeatureGenerator;
+
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Map;

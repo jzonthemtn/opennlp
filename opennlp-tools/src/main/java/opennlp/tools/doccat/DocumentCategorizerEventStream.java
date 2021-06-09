@@ -19,6 +19,7 @@ package opennlp.tools.doccat;
 
 import java.util.Iterator;
 
+import opennlp.common.doccat.FeatureGenerator;
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.util.AbstractEventStream;
 import opennlp.tools.util.ObjectStream;

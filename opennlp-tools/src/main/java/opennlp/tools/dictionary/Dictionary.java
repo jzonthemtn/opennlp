@@ -31,8 +31,8 @@ import java.util.StringTokenizer;
 import opennlp.tools.dictionary.serializer.Attributes;
 import opennlp.tools.dictionary.serializer.DictionaryEntryPersistor;
 import opennlp.tools.dictionary.serializer.Entry;
-import opennlp.tools.util.StringList;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringList;
+import opennlp.common.util.StringUtil;
 import opennlp.tools.util.model.DictionarySerializer;
 import opennlp.tools.util.model.SerializableArtifact;
 

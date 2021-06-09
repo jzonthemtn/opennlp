@@ -20,6 +20,7 @@ package opennlp.tools.formats.letsmt;
 import java.io.File;
 import java.io.IOException;
 
+import opennlp.common.tokenize.Detokenizer;
 import opennlp.tools.cmdline.ArgumentParser;
 import opennlp.tools.cmdline.CmdLineUtil;
 import opennlp.tools.cmdline.StreamFactoryRegistry;
@@ -28,7 +29,6 @@ import opennlp.tools.cmdline.params.BasicFormatParams;
 import opennlp.tools.formats.AbstractSampleStreamFactory;
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.tokenize.DetokenizationDictionary;
-import opennlp.tools.tokenize.Detokenizer;
 import opennlp.tools.tokenize.DictionaryDetokenizer;
 import opennlp.tools.util.ObjectStream;
 

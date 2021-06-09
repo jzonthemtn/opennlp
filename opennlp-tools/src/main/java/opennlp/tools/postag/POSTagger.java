@@ -17,7 +17,7 @@
 
 package opennlp.tools.postag;
 
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 
 /**
  * The interface for part of speech taggers.

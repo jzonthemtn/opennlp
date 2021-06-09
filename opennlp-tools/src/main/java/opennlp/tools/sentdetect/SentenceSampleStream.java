@@ -24,7 +24,7 @@ import java.util.List;
 
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This class is a stream filter which reads a sentence by line samples from

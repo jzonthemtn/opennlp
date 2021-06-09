@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
 
 import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.util.Cache;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * A context generator for the POS Tagger.

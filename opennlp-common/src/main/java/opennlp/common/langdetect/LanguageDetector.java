@@ -15,29 +15,19 @@
  * limitations under the License.
  */
 
-package opennlp.tools.namefind;
+package opennlp.common.langdetect;
 
-import opennlp.tools.util.Span;
+import java.io.Serializable;
 
 /**
- * The interface for name finders which provide name tags for a sequence of tokens.
+ * The interface for LanguageDetector which provide the @{@link Language} according to the context.
  */
-public interface TokenNameFinder {
+public interface LanguageDetector extends Serializable {
 
-  /** Generates name tags for the given sequence, typically a sentence,
-   * returning token spans for any identified names.
-   *
-   * @param tokens an array of the tokens or words of the sequence, typically a sentence.
-   * @return an array of spans for each of the names identified.
-   */
-  Span[] find(String[] tokens);
+  Language[] predictLanguages(CharSequence content);
 
-  /**
-   * Forgets all adaptive data which was collected during previous
-   * calls to one of the find methods.
-   *
-   * This method is typical called at the end of a document.
-   */
-  void clearAdaptiveData();
+  Language predictLanguage(CharSequence content);
+
+  String[] getSupportedLanguages();
 
 }

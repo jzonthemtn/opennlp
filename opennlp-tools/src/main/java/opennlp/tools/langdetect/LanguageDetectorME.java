@@ -24,6 +24,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import opennlp.common.langdetect.Language;
+import opennlp.common.langdetect.LanguageDetector;
 import opennlp.tools.ml.AbstractEventTrainer;
 import opennlp.tools.ml.EventTrainer;
 import opennlp.tools.ml.TrainerFactory;

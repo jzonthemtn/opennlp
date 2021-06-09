@@ -24,8 +24,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import opennlp.tools.tokenize.Detokenizer.DetokenizationOperation;
-import opennlp.tools.util.Span;
+import opennlp.common.tokenize.Detokenizer;
+import opennlp.common.util.Span;
 
 /**
  * A {@link TokenSample} is text with token spans.
@@ -65,7 +65,7 @@ public class TokenSample implements Serializable {
 
     StringBuilder sentence = new StringBuilder();
 
-    DetokenizationOperation[] operations = detokenizer.detokenize(tokens);
+    Detokenizer.DetokenizationOperation[] operations = detokenizer.detokenize(tokens);
 
     List<Span> mergedTokenSpans = new ArrayList<>();
 
@@ -88,14 +88,14 @@ public class TokenSample implements Serializable {
     tokenSpans = Collections.unmodifiableList(mergedTokenSpans);
   }
 
-  private boolean isMergeToRight(DetokenizationOperation operation) {
-    return DetokenizationOperation.MERGE_TO_RIGHT.equals(operation)
-        || DetokenizationOperation.MERGE_BOTH.equals(operation);
+  private boolean isMergeToRight(Detokenizer.DetokenizationOperation operation) {
+    return Detokenizer.DetokenizationOperation.MERGE_TO_RIGHT.equals(operation)
+        || Detokenizer.DetokenizationOperation.MERGE_BOTH.equals(operation);
   }
 
-  private boolean isMergeToLeft(DetokenizationOperation operation) {
-    return DetokenizationOperation.MERGE_TO_LEFT.equals(operation)
-        || DetokenizationOperation.MERGE_BOTH.equals(operation);
+  private boolean isMergeToLeft(Detokenizer.DetokenizationOperation operation) {
+    return Detokenizer.DetokenizationOperation.MERGE_TO_LEFT.equals(operation)
+        || Detokenizer.DetokenizationOperation.MERGE_BOTH.equals(operation);
   }
 
   /**

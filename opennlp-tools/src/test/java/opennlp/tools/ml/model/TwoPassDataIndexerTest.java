@@ -29,7 +29,7 @@ import opennlp.tools.namefind.NameFinderEventStream;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.TrainingParameters;
 import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
 

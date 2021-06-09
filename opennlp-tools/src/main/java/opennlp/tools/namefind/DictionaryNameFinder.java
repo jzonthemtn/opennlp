@@ -21,9 +21,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
+import opennlp.common.namefind.TokenNameFinder;
 import opennlp.tools.dictionary.Dictionary;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringList;
 
 /**
  * This is a dictionary based name finder, it scans text

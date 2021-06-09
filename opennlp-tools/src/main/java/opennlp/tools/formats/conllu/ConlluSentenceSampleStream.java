@@ -24,7 +24,7 @@ import java.util.List;
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class ConlluSentenceSampleStream extends FilterObjectStream<ConlluSentence, SentenceSample> {
 

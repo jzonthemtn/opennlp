@@ -25,7 +25,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import opennlp.tools.tokenize.TokenSample;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class IrishSentenceBankDocumentTest {
 

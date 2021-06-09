@@ -37,10 +37,10 @@ import opennlp.tools.ml.model.MaxentModel;
 import opennlp.tools.ml.model.SequenceClassificationModel;
 import opennlp.tools.ngram.NGramModel;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Sequence;
+import opennlp.common.util.Sequence;
 import opennlp.tools.util.SequenceValidator;
-import opennlp.tools.util.StringList;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringList;
+import opennlp.common.util.StringUtil;
 import opennlp.tools.util.TrainingParameters;
 import opennlp.tools.util.featuregen.StringPattern;
 

@@ -21,9 +21,9 @@ package opennlp.tools.util.featuregen;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.tokenize.SimpleTokenizer;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 /**
  * Partitions tokens into sub-tokens based on character classes and generates

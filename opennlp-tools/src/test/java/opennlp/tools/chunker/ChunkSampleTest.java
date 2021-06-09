@@ -35,7 +35,7 @@ import org.junit.Test;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class ChunkSampleTest {
 

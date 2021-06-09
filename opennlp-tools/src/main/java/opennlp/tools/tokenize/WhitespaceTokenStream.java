@@ -21,7 +21,7 @@ import java.io.IOException;
 
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This stream formats a {@link TokenSample}s into whitespace

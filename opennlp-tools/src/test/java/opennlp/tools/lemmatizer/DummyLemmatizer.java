@@ -17,6 +17,8 @@
 
 package opennlp.tools.lemmatizer;
 
+import opennlp.common.lemmatizer.Lemmatizer;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;

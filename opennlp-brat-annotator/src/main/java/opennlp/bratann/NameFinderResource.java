@@ -29,10 +29,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import opennlp.tools.namefind.TokenNameFinder;
+import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.sentdetect.SentenceDetector;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 @Path("/ner")
 public class NameFinderResource {

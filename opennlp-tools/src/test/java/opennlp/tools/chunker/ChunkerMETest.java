@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
+import opennlp.common.chunker.Chunker;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,8 +31,8 @@ import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.util.InsufficientTrainingDataException;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Sequence;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Sequence;
+import opennlp.common.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
 /**

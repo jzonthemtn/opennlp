@@ -21,7 +21,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedList;
 
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * Utility class for ngrams.

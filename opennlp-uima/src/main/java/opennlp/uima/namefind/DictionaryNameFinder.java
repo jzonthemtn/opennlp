@@ -20,12 +20,13 @@ package opennlp.uima.namefind;
 import java.io.IOException;
 import java.io.InputStream;
 
+import opennlp.common.namefind.TokenNameFinder;
 import org.apache.uima.cas.CAS;
 import org.apache.uima.resource.ResourceAccessException;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import opennlp.tools.dictionary.Dictionary;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.uima.dictionary.DictionaryResource;
 import opennlp.uima.util.AnnotatorUtil;
 import opennlp.uima.util.ExceptionMessages;
@@ -33,7 +34,7 @@ import opennlp.uima.util.UimaUtil;
 
 public class DictionaryNameFinder extends AbstractNameFinder {
 
-  private opennlp.tools.namefind.TokenNameFinder mNameFinder;
+  private TokenNameFinder mNameFinder;
 
   /**
    * Initializes a new instance.

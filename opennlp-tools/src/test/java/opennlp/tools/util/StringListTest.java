@@ -19,6 +19,7 @@ package opennlp.tools.util;
 
 import java.util.Iterator;
 
+import opennlp.common.util.StringList;
 import org.junit.Assert;
 import org.junit.Test;
 

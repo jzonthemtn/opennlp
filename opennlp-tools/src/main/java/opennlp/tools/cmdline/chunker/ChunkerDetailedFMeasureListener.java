@@ -20,7 +20,7 @@ package opennlp.tools.cmdline.chunker;
 import opennlp.tools.chunker.ChunkSample;
 import opennlp.tools.chunker.ChunkerEvaluationMonitor;
 import opennlp.tools.cmdline.DetailedFMeasureListener;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class ChunkerDetailedFMeasureListener extends
     DetailedFMeasureListener<ChunkSample> implements ChunkerEvaluationMonitor {

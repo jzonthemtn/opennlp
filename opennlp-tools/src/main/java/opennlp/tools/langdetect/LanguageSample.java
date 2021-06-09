@@ -17,6 +17,8 @@
 
 package opennlp.tools.langdetect;
 
+import opennlp.common.langdetect.Language;
+
 import java.io.Serializable;
 import java.util.Objects;
 

@@ -29,8 +29,8 @@ import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.InvalidFormatException;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringUtil;
 
 /**
  * Parser for the Italian NER training files of the Evalita 2007 and 2009 NER  shared tasks.

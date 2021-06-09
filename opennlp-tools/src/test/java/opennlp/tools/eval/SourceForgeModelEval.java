@@ -28,16 +28,17 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+import opennlp.common.chunker.Chunker;
+import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.tokenize.Tokenizer;
+import opennlp.tools.chunker.ChunkerME;
+import opennlp.tools.chunker.ChunkerModel;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import opennlp.tools.chunker.Chunker;
-import opennlp.tools.chunker.ChunkerME;
-import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.cmdline.parser.ParserTool;
 import opennlp.tools.namefind.NameFinderME;
-import opennlp.tools.namefind.TokenNameFinder;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.parser.Parse;
 import opennlp.tools.parser.Parser;
@@ -51,7 +52,6 @@ import opennlp.tools.sentdetect.SentenceDetector;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.tokenize.SimpleTokenizer;
-import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
@@ -60,7 +60,7 @@ import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.MarkableFileInputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This tests ensures that the existing SourceForge models perform

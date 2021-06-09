@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.SortedMap;
 
+import opennlp.common.doccat.DocumentCategorizer;
 import org.junit.Assert;
 import org.junit.Test;
 

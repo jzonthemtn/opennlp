@@ -22,12 +22,12 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 
+import opennlp.tools.chunker.ChunkerCrossValidator;
+import opennlp.tools.chunker.ChunkerFactory;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import opennlp.tools.chunker.ChunkerCrossValidator;
-import opennlp.tools.chunker.ChunkerFactory;
 import opennlp.tools.formats.ad.ADChunkSampleStream;
 import opennlp.tools.formats.ad.ADNameSampleStream;
 import opennlp.tools.formats.ad.ADSentenceSampleStream;

@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
+import opennlp.common.chunker.Chunker;
 import org.junit.Assert;
 import org.junit.Test;
 

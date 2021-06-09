@@ -25,15 +25,15 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import opennlp.tools.chunker.Chunker;
+import opennlp.common.chunker.Chunker;
 import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.ngram.NGramModel;
 import opennlp.tools.parser.chunking.ParserEventStream;
 import opennlp.tools.postag.POSTagger;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Sequence;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.Sequence;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringList;
 import opennlp.tools.util.TrainingParameters;
 
 /**

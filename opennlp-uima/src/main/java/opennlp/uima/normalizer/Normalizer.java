@@ -37,7 +37,7 @@ import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
 import org.apache.uima.util.Logger;
 
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 import opennlp.uima.namefind.NameFinder;
 import opennlp.uima.util.AnnotatorUtil;
 import opennlp.uima.util.ExceptionMessages;

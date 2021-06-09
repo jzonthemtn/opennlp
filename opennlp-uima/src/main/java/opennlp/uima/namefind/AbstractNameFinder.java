@@ -34,7 +34,7 @@ import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
 import org.apache.uima.util.Logger;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.uima.util.AnnotationComboIterator;
 import opennlp.uima.util.AnnotationIteratorPair;
 import opennlp.uima.util.AnnotatorUtil;

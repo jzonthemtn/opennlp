@@ -31,8 +31,8 @@ import opennlp.tools.namefind.NameSample;
 import opennlp.tools.tokenize.WhitespaceTokenizer;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringUtil;
 
 /**
  * Name Sample Stream parser for the OntoNotes 4.0 corpus.

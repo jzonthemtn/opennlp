@@ -20,11 +20,11 @@ package opennlp.tools.util.featuregen;
 import java.util.ArrayList;
 import java.util.List;
 
+import opennlp.common.namefind.TokenNameFinder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import opennlp.tools.namefind.TokenNameFinder;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class InSpanGeneratorTest {
 

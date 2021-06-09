@@ -17,6 +17,7 @@
 
 package opennlp.tools.doccat;
 
+import opennlp.common.doccat.DocumentCategorizer;
 import opennlp.tools.tokenize.TokenSample;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.Mean;

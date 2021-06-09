@@ -17,6 +17,7 @@
 
 package opennlp.tools.util;
 
+import opennlp.common.util.Sequence;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -15,23 +15,33 @@
  * limitations under the License.
  */
 
+package opennlp.common.lemmatizer;
 
-package opennlp.tools.doccat;
-
-import java.util.Collection;
-import java.util.Map;
+import java.util.List;
 
 /**
- * Interface for generating features for document categorization.
+ * The interface for lemmatizers.
  */
-public interface FeatureGenerator {
+public interface Lemmatizer {
 
   /**
-   * Extract features from given text fragments
+   * Generates lemmas for the word and postag returning the result in an array.
    *
-   * @param text             the text fragments to extract features from
-   * @param extraInformation optional extra information to be used by the feature generator
-   * @return a collection of features
+   * @param toks an array of the tokens
+   * @param tags an array of the pos tags
+   *
+   * @return an array of possible lemmas for each token in the sequence.
    */
-  Collection<String> extractFeatures(String[] text, Map<String, Object> extraInformation);
+  String[] lemmatize(String[] toks, String[] tags);
+
+  /**
+   * Generates a lemma tags for the word and postag returning the result in a list
+   * of every possible lemma for each token and postag.
+   *
+   * @param toks an array of the tokens
+   * @param tags an array of the pos tags
+   * @return a list of every possible lemma for each token in the sequence.
+   */
+  List<List<String>> lemmatize(List<String> toks, List<String> tags);
+
 }

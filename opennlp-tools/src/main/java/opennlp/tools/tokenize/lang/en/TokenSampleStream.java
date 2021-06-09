@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import opennlp.tools.tokenize.TokenSample;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Class which produces an Iterator&lt;TokenSample&gt; from a file of space delimited token.

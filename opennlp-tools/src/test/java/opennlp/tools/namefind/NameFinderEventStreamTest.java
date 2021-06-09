@@ -25,7 +25,7 @@ import org.junit.Test;
 import opennlp.tools.ml.model.Event;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
 
 /**

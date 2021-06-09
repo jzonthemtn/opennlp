@@ -28,8 +28,8 @@ import opennlp.tools.namefind.NameSample;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringUtil;
 
 /**
  * Parser for the training files of the BioNLP/NLPBA 2004 shared task.

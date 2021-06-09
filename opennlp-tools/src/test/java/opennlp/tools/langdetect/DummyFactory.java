@@ -25,7 +25,7 @@ import java.util.List;
 
 import opennlp.tools.ngram.NGramModel;
 import opennlp.tools.tokenize.SimpleTokenizer;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 import opennlp.tools.util.normalizer.CharSequenceNormalizer;
 
 public class DummyFactory extends LanguageDetectorFactory {

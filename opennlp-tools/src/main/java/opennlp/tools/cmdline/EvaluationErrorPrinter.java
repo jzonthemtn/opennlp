@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.eval.EvaluationMonitor;
 
 /**

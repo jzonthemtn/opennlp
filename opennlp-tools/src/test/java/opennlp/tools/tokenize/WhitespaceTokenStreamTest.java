@@ -24,7 +24,7 @@ import org.junit.Test;
 
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.ObjectStreamUtils;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class WhitespaceTokenStreamTest {
 

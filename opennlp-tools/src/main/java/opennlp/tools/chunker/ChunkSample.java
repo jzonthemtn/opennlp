@@ -24,7 +24,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * Class for holding chunks for a single unit of text.

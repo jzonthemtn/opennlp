@@ -32,7 +32,7 @@ import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.formats.NameFinderCensus90NameStream;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * This tool helps create a loadable dictionary for the {@code NameFinder},

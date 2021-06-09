@@ -101,6 +101,12 @@
 			</dependency>
 
 			<dependency>
+				<artifactId>opennlp-common</artifactId>
+				<groupId>${project.groupId}</groupId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
 				<artifactId>opennlp-tools</artifactId>
 				<groupId>${project.groupId}</groupId>
 				<version>${project.version}</version>
@@ -499,6 +505,7 @@
 	</profiles>
 
 	<modules>
+		<module>opennlp-common</module>
 		<module>opennlp-tools</module>
 		<module>opennlp-uima</module>
 		<module>opennlp-brat-annotator</module>

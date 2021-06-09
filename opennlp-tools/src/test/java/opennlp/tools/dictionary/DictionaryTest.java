@@ -26,7 +26,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * Tests for the {@link Dictionary} class.

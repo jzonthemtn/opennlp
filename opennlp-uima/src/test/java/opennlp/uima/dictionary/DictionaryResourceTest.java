@@ -39,7 +39,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 import opennlp.uima.util.CasUtil;
 
 public class DictionaryResourceTest {

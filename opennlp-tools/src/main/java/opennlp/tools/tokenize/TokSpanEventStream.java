@@ -27,7 +27,7 @@ import opennlp.tools.ml.model.Event;
 import opennlp.tools.tokenize.lang.Factory;
 import opennlp.tools.util.AbstractEventStream;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This class reads the {@link TokenSample}s from the given {@link Iterator}

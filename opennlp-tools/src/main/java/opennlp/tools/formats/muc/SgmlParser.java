@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.StringUtil;
 
 /**
  * SAX style SGML parser.

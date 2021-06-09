@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package opennlp.tools.doccat;
+package opennlp.common.doccat;
 
 import java.util.Map;
 import java.util.Set;

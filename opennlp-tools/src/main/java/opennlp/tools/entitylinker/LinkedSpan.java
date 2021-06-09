@@ -19,7 +19,7 @@ package opennlp.tools.entitylinker;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * An "default" extended span that holds additional information about the Span

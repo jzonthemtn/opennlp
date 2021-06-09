@@ -20,11 +20,12 @@ package opennlp.tools.namefind;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 
+import opennlp.common.namefind.TokenNameFinder;
 import org.junit.Assert;
 import org.junit.Test;
 
 import opennlp.tools.cmdline.namefind.NameEvaluationErrorListener;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 /**
  * This is the test class for {@link TokenNameFinderEvaluator}..

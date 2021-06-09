@@ -33,7 +33,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import opennlp.tools.dictionary.Dictionary;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  *

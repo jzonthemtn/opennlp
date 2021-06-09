@@ -24,7 +24,7 @@ import org.junit.Test;
 
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

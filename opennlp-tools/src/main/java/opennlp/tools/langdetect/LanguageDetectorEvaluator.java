@@ -17,7 +17,9 @@
 
 package opennlp.tools.langdetect;
 
-import opennlp.tools.doccat.DocumentCategorizer;
+import opennlp.common.doccat.DocumentCategorizer;
+import opennlp.common.langdetect.Language;
+import opennlp.common.langdetect.LanguageDetector;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.Mean;
 
@@ -60,8 +62,6 @@ public class LanguageDetectorEvaluator extends Evaluator<LanguageSample> {
     CharSequence document = sample.getContext();
 
     Language predicted = languageDetector.predictLanguage(document);
-
-
 
     if (sample.getLanguage().getLang().equals(predicted.getLang())) {
       accuracy.add(1);

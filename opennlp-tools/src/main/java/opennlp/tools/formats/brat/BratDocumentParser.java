@@ -26,10 +26,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.sentdetect.SentenceDetector;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class BratDocumentParser {
 

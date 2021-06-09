@@ -22,8 +22,8 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import opennlp.common.tokenize.Tokenizer;
 import opennlp.tools.namefind.NameSample;
-import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
 

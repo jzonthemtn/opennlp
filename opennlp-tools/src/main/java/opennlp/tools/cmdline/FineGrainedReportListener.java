@@ -35,7 +35,7 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.eval.FMeasure;
 import opennlp.tools.util.eval.Mean;
 

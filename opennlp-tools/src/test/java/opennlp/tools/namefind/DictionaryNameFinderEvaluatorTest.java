@@ -32,8 +32,8 @@ import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringList;
 import opennlp.tools.util.eval.FMeasure;
 
 /**

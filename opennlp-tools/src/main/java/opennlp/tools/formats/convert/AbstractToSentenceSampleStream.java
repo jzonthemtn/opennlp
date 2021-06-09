@@ -22,8 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import opennlp.common.tokenize.Detokenizer;
 import opennlp.tools.sentdetect.SentenceSample;
-import opennlp.tools.tokenize.Detokenizer;
 import opennlp.tools.util.FilterObjectStream;
 import opennlp.tools.util.ObjectStream;
 

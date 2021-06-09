@@ -28,7 +28,7 @@ import org.junit.Test;
 
 import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * Tests for {@link opennlp.tools.ngram.NGramModel}

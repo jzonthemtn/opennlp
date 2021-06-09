@@ -20,7 +20,7 @@ package opennlp.tools.cmdline.namefind;
 import opennlp.tools.cmdline.DetailedFMeasureListener;
 import opennlp.tools.namefind.NameSample;
 import opennlp.tools.namefind.TokenNameFinderEvaluationMonitor;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 
 public class TokenNameFinderDetailedFMeasureListener extends
     DetailedFMeasureListener<NameSample> implements

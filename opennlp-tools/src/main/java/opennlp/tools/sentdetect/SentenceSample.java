@@ -24,8 +24,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import opennlp.tools.tokenize.Detokenizer;
-import opennlp.tools.util.Span;
+import opennlp.common.tokenize.Detokenizer;
+import opennlp.common.util.Span;
 
 /**
  * A {@link SentenceSample} contains a document with

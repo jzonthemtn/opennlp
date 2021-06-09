@@ -17,6 +17,8 @@
 
 package opennlp.tools.tokenize;
 
+import opennlp.common.tokenize.Detokenizer;
+
 import java.util.HashSet;
 import java.util.Set;
 

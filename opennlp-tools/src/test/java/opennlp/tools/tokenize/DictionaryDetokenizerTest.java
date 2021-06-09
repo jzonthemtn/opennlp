@@ -20,11 +20,11 @@ package opennlp.tools.tokenize;
 import java.io.IOException;
 import java.io.InputStream;
 
+import opennlp.common.tokenize.Detokenizer;
 import org.junit.Assert;
 import org.junit.Test;
 
 import opennlp.tools.tokenize.DetokenizationDictionary.Operation;
-import opennlp.tools.tokenize.Detokenizer.DetokenizationOperation;
 
 public class DictionaryDetokenizerTest {
 
@@ -44,15 +44,15 @@ public class DictionaryDetokenizerTest {
     DetokenizationDictionary dict = new DetokenizationDictionary(tokens, operations);
     Detokenizer detokenizer = new DictionaryDetokenizer(dict);
 
-    DetokenizationOperation[] detokenizeOperations =
+    Detokenizer.DetokenizationOperation[] detokenizeOperations =
       detokenizer.detokenize(new String[]{"Simple",  "test", ".", "co", "-", "worker"});
 
-    Assert.assertEquals(DetokenizationOperation.NO_OPERATION, detokenizeOperations[0]);
-    Assert.assertEquals(DetokenizationOperation.NO_OPERATION, detokenizeOperations[1]);
-    Assert.assertEquals(DetokenizationOperation.MERGE_TO_LEFT, detokenizeOperations[2]);
-    Assert.assertEquals(DetokenizationOperation.NO_OPERATION, detokenizeOperations[3]);
-    Assert.assertEquals(DetokenizationOperation.MERGE_BOTH, detokenizeOperations[4]);
-    Assert.assertEquals(DetokenizationOperation.NO_OPERATION, detokenizeOperations[5]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.NO_OPERATION, detokenizeOperations[0]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.NO_OPERATION, detokenizeOperations[1]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.MERGE_TO_LEFT, detokenizeOperations[2]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.NO_OPERATION, detokenizeOperations[3]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.MERGE_BOTH, detokenizeOperations[4]);
+    Assert.assertEquals(Detokenizer.DetokenizationOperation.NO_OPERATION, detokenizeOperations[5]);
   }
 
   static Detokenizer createLatinDetokenizer() throws IOException {

@@ -18,7 +18,7 @@
 
 package opennlp.tools.dictionary.serializer;
 
-import opennlp.tools.util.StringList;
+import opennlp.common.util.StringList;
 
 /**
  * An {@link Entry} is a {@link StringList} which can

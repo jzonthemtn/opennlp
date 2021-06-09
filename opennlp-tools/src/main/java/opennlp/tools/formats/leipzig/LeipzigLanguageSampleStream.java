@@ -34,7 +34,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import opennlp.tools.langdetect.Language;
+import opennlp.common.langdetect.Language;
 import opennlp.tools.langdetect.LanguageSample;
 import opennlp.tools.util.InvalidFormatException;
 import opennlp.tools.util.MarkableFileInputStreamFactory;

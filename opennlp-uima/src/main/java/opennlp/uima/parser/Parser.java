@@ -41,7 +41,7 @@ import org.apache.uima.util.Logger;
 import opennlp.tools.parser.Parse;
 import opennlp.tools.parser.ParserFactory;
 import opennlp.tools.parser.ParserModel;
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.uima.util.AnnotatorUtil;
 import opennlp.uima.util.ContainingConstraint;
 import opennlp.uima.util.UimaUtil;

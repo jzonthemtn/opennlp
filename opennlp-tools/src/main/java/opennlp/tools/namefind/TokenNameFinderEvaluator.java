@@ -18,7 +18,8 @@
 
 package opennlp.tools.namefind;
 
-import opennlp.tools.util.Span;
+import opennlp.common.namefind.TokenNameFinder;
+import opennlp.common.util.Span;
 import opennlp.tools.util.eval.Evaluator;
 import opennlp.tools.util.eval.FMeasure;
 

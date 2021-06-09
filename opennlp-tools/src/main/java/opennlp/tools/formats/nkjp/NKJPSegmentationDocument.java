@@ -35,7 +35,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import opennlp.tools.util.Span;
+import opennlp.common.util.Span;
 import opennlp.tools.util.XmlUtil;
 
 public class NKJPSegmentationDocument {

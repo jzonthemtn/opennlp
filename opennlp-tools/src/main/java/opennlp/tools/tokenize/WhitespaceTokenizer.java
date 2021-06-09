@@ -20,8 +20,9 @@ package opennlp.tools.tokenize;
 import java.util.ArrayList;
 import java.util.List;
 
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.tokenize.AbstractTokenizer;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringUtil;
 
 /**
  * This tokenizer uses white spaces to tokenize the input text.

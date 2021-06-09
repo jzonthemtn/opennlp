@@ -32,11 +32,7 @@ import opennlp.tools.cmdline.TerminateToolException;
 import opennlp.tools.cmdline.doccat.DoccatEvaluatorTool.EvalToolParams;
 import opennlp.tools.cmdline.params.EvaluatorParams;
 import opennlp.tools.cmdline.params.FineGrainedEvaluatorParams;
-import opennlp.tools.doccat.DoccatEvaluationMonitor;
-import opennlp.tools.doccat.DoccatModel;
-import opennlp.tools.doccat.DocumentCategorizerEvaluator;
-import opennlp.tools.doccat.DocumentCategorizerME;
-import opennlp.tools.doccat.DocumentSample;
+import opennlp.tools.doccat.*;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.eval.EvaluationMonitor;
 

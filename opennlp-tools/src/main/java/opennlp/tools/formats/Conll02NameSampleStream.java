@@ -29,8 +29,8 @@ import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.InvalidFormatException;
 import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.tools.util.Span;
-import opennlp.tools.util.StringUtil;
+import opennlp.common.util.Span;
+import opennlp.common.util.StringUtil;
 
 /**
  * Parser for the dutch and spanish ner training files of the CONLL 2002 shared task.
