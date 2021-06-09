@@ -26,9 +26,9 @@ import java.nio.charset.StandardCharsets;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.util.StringList;
 import opennlp.tools.dictionary.Dictionary;
 import opennlp.tools.util.InvalidFormatException;
-import opennlp.common.util.StringList;
 
 /**
  * Tests for {@link opennlp.tools.ngram.NGramModel}

@@ -17,9 +17,10 @@
 
 package opennlp.tools.util;
 
-import opennlp.common.util.Sequence;
 import org.junit.Assert;
 import org.junit.Test;
+
+import opennlp.common.util.Sequence;
 
 /**
  * Tests for the {@link Sequence} class.

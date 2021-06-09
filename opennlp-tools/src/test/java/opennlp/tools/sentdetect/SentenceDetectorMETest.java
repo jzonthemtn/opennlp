@@ -15,7 +15,6 @@
  * limitations under the License.
  */
 
-
 package opennlp.tools.sentdetect;
 
 import java.io.IOException;
@@ -24,11 +23,11 @@ import java.nio.charset.StandardCharsets;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.util.Span;
 import opennlp.tools.formats.ResourceAsStreamFactory;
 import opennlp.tools.util.InputStreamFactory;
 import opennlp.tools.util.InsufficientTrainingDataException;
 import opennlp.tools.util.PlainTextByLineStream;
-import opennlp.common.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
 /**

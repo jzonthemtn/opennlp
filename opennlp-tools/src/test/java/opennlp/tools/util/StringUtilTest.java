@@ -17,9 +17,10 @@
 
 package opennlp.tools.util;
 
-import opennlp.common.util.StringUtil;
 import org.junit.Assert;
 import org.junit.Test;
+
+import opennlp.common.util.StringUtil;
 
 /**
  * Tests for the {@link StringUtil} class.

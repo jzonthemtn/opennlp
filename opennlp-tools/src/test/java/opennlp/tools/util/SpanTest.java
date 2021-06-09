@@ -17,9 +17,10 @@
 
 package opennlp.tools.util;
 
-import opennlp.common.util.Span;
 import org.junit.Assert;
 import org.junit.Test;
+
+import opennlp.common.util.Span;
 
 /**
  * Tests for the {@link Span} class.

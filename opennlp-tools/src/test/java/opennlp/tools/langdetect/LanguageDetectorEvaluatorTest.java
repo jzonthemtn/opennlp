@@ -21,12 +21,11 @@ import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import opennlp.common.langdetect.Language;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.langdetect.Language;
 import opennlp.tools.cmdline.langdetect.LanguageDetectorEvaluationErrorListener;
-
 
 public class LanguageDetectorEvaluatorTest {
 
@@ -75,7 +74,7 @@ public class LanguageDetectorEvaluatorTest {
 
     Assert.assertEquals("Expected\tPredicted\tContext" + System.lineSeparator() +
         "fra\tpob\tescreve e faz palestras pelo mundo inteiro sobre anjos" + System.lineSeparator() +
-        "fra\tpob\tescreve e faz palestras pelo mundo inteiro sobre anjos" +  System.lineSeparator(), report);
+        "fra\tpob\tescreve e faz palestras pelo mundo inteiro sobre anjos" + System.lineSeparator(), report);
   }
 
 }

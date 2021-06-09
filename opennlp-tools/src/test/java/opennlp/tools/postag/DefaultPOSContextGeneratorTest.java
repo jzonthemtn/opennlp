@@ -32,8 +32,8 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import opennlp.tools.dictionary.Dictionary;
 import opennlp.common.util.StringList;
+import opennlp.tools.dictionary.Dictionary;
 
 /**
  *

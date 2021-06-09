@@ -25,9 +25,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
-import opennlp.common.langdetect.Language;
 import org.junit.Assert;
 import org.junit.Test;
+
+import opennlp.common.langdetect.Language;
 
 public class LanguageSampleTest {
 

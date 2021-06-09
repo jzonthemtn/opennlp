@@ -17,10 +17,10 @@
 
 package opennlp.tools.langdetect;
 
-import opennlp.common.langdetect.Language;
 import org.junit.Assert;
 import org.junit.Test;
 
+import opennlp.common.langdetect.Language;
 
 public class LanguageTest {
 
