@@ -56,7 +56,10 @@ public class BinaryFileDataReader implements DataReader {
   }
 
   public String readUTF() throws IOException {
-    return input.readUTF();
+    int length = input.readShort();
+    byte[] data = new byte[length];
+    input.readFully(data);
+    return new String(data,"UTF-8");
   }
 
 }

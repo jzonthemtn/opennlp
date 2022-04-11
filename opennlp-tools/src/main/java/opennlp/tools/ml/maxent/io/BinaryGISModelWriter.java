@@ -68,7 +68,9 @@ public class BinaryGISModelWriter extends GISModelWriter {
   }
 
   public void writeUTF(String s) throws java.io.IOException {
-    output.writeUTF(s);
+    byte[] data = s.getBytes("UTF-8");
+    output.writeShort(data.length);
+    output.write(data);
   }
 
   public void writeInt(int i) throws java.io.IOException {
