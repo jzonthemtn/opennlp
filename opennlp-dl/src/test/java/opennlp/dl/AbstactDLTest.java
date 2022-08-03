@@ -25,7 +25,7 @@ import opennlp.tools.util.StringUtil;
 public abstract class AbstactDLTest {
 
   public static File getOpennlpDataDir() throws FileNotFoundException {
-    final String dataDirectory = System.getProperty("OPENNLP_DATA_DIR");
+    final String dataDirectory = "/mtnfog/code/apache-opennlp/opennlp-data";// System.getProperty("OPENNLP_DATA_DIR");
     if (StringUtil.isEmpty(dataDirectory)) {
       throw new IllegalArgumentException("The OPENNLP_DATA_DIR is not set.");
     }

@@ -81,6 +81,10 @@ public class DocumentCategorizerDL implements DocumentCategorizer {
 
     try {
 
+      if(strings[0].length() > 512) {
+        strings[0] = strings[0].substring(0, 512);
+      }
+
       final Object output = inference.infer(strings[0]);
       final double[][] vectors = inference.convertFloatsToDoubles((float[][]) output);
 
