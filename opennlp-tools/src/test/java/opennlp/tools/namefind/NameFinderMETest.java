@@ -178,13 +178,17 @@ public class NameFinderMETest {
 
     // now test if it can detect the sample sentences
 
-    String[] sentence = ("Neil Abercrombie Anibal Acevedo-Vila Gary Ackerman " +
-            "Robert Aderholt Daniel Akaka Todd Akin Lamar Alexander Rodney Alexander").split("\\s+");
+    final String sentence = "Neil Abercrombie Anibal Acevedo-Vila Gary Ackerman " +
+        "Robert Aderholt Daniel Akaka Todd Akin Lamar Alexander Rodney Alexander";
+    String[] s = sentence.split("\\s+");
 
-    Span[] names1 = nameFinder.find(sentence);
+    Span[] names1 = nameFinder.find(s);
 
+    Assert.assertEquals("Neil Abercrombie", names1[0].getCoveredText(sentence));
     Assert.assertEquals(new Span(0, 2, DEFAULT), names1[0]);
+    Assert.assertEquals("Anibal Acevedo-Vila", names1[1].getCoveredText(sentence));
     Assert.assertEquals(new Span(2, 4, DEFAULT), names1[1]);
+    Assert.assertEquals("Gary Ackerman", names1[2].getCoveredText(sentence));
     Assert.assertEquals(new Span(4, 6, DEFAULT), names1[2]);
     Assert.assertFalse(hasOtherAsOutcome(nameFinderModel));
   }
